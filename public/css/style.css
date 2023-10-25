@@ -1,10 +1,9 @@
 :root{
-    --main-color: #d7c7ae;
+    --background: #dec29d;
     --primary-color: #8a6d46;
-    --hover: #5a4d3e;
-    --black: #2a201c;
-    --white: #fff;
-    --light-bg: #f3efec;
+    --header: #c7aa84;
+    --hover: #625b5b;
+    --dark-font: #2a201c;
     --dark-bg: rgba(0,0,0,.7);
     --border: .1rem solid #aaa;
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
@@ -22,7 +21,7 @@
 }
 
 body{
-    background: #d7c7ae;
+    background: rgb(96, 90, 100);
 }
 
 html{
@@ -48,24 +47,19 @@ section{
     padding: 2rem 4.5%;
 }
 
-.heading{
-    text-align: center;
-
-}
-
 /* header  */
-
 header {
     padding-top: 1.5rem; 
     padding-bottom: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow: var(--box-shadow);
     position: sticky;
     top: 0;
     left: 0; right: 0;
-    background-color: #d1ab7a;
+    background-color: var(--background);
+
     margin: 0 auto;
     z-index: 1000;
     border-radius: 0 0 10px 10px;
@@ -80,40 +74,48 @@ header {
 }
 
 .navbar {
+    width: 100%;
     display: flex;
     position: relative;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #d1ab7a;
-    color: rgb(31, 17, 17);
+    justify-content: space-around;
+    background-color: var(--background);
+    color: var(--dark-font);
 }
-
-.navbar-links {
+.navbar ul a{
+    position: relative;
+    display: block;
     height: 100%;
-}
-
-.navbar-links ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-links li a {
     color:rgb(31, 17, 17);
     padding: 1rem;
-    display: block;
     font-size: 1.5rem;
     margin-left: 2rem;
 }
 
-.navbar-links li:hover {
-    background-color: rgb(222, 193, 149);
-    padding-bottom: 0.5rem;
+.navbar-links ul {
+    display: flex;
 }
 
-.toggle-button {
+
+.navbar a::after{
+    content: "";
     position: absolute;
-    top: .75rem;
+    background-color: var(--dark-font);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.navbar a:hover{
+    color: var(--dark-font);
+    font-size: 1.9rem;
+}
+.toggle-button {
+    position: fixed;
+    top: 1rem;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -125,7 +127,7 @@ header {
 .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: white;
+    background-color: var(--dark-font);
     border-radius: 10px;
 }
 
@@ -156,7 +158,7 @@ header {
 
 .main .content h3 {
     color: rgb(31, 17, 17);
-    font-size: 6rem;
+    font-size: 5rem;
     line-height: 6rem;
     font-weight: 700;
     align-items: center;
@@ -173,6 +175,18 @@ header {
 /* @media  */
 
 /* .navbar-links */
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header .navbar a{
+        font-size: 1.7rem;
+    }
+
+    section{
+        padding: 3rem 2rem;
+    }
+}
 @media (max-width: 800px) {
     .navbar {
         flex-direction: column;
