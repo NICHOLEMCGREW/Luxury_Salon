@@ -1,5 +1,5 @@
 :root{
-    --background: #dec29d;
+    --background: rgba(209, 171, 122);
     --primary-color: #8a6d46;
     --header: #c7aa84;
     --hover: #625b5b;
@@ -59,7 +59,6 @@ header {
     top: 0;
     left: 0; right: 0;
     background-color: var(--background);
-
     margin: 0 auto;
     z-index: 1000;
     border-radius: 0 0 10px 10px;
@@ -67,10 +66,12 @@ header {
 /* header  */
 
 /* nav  */
-.logo {
-    font-size: 2.5rem;
-    margin: .5rem;
-    font-weight: bolder;
+.logo img {
+    display: flex;
+    width: 20%;
+    height: 20%;
+    margin: 0 5%;
+    
 }
 
 .navbar {
@@ -89,6 +90,7 @@ header {
     padding: 1rem;
     font-size: 1.5rem;
     margin-left: 2rem;
+    text-transform: uppercase;
 }
 
 .navbar-links ul {
