@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+
+:root{
+    --background: rgba(209, 171, 122);
+    --primary-color: #8a6d46;
+    --header: #c7aa84;
+    --hover: #625b5b;
+    --dark-font: #2a201c;
+    --dark-bg: rgba(0,0,0,.7);
+    --border: .1rem solid #aaa;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+/* :root{
+    --rose-gold: #B76E79;
+    --gold: #FFD700;
+    --silver: #C0C0C0;
+    --mint-green: ##98FB98;
+    --lavender: #E6E6FA;
+    --off-white: #f2e2ce;
+    --dark: #262621;
+    --hover2: #B76E79;
+    --border: .1rem solid #aaa;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+} */
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    transition: all .2s linear;
+}
+
+body {
+    background: rgb(96, 90, 100);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar{
+    width: .6rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+}
+
+section{
+    padding: 2rem 4.5%;
+}
+
+a {
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+.heading{
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    font-size: 4rem;
+}
+ 
+/* Header  */
+header {
+    padding-top: 1.5rem; 
+    padding-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+    position: sticky;
+    top: 0;
+    left: 0; right: 0;
+    background-color: var(--background);
+    margin: 0 auto;
+    z-index: 1000;
+    border-radius: 0 0 10px 10px;
+}
+header .logo {
+    font-size:  2.5rem;
+    margin: .5rem;
+    font-weight: bolder;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.logo img {
+    display: flex;
+    width: 20%;
+    height: 20%;
+    margin: 0 5%;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+}
+
+.btn:hover{
+    background: var(--hover);
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: var(--background);
+    color: var(--dark-font);
+    padding: 10px 20px;
+    align-items: center;
+}
+
+/* .logo {
+    font-size: 24px;
+    font-weight: bold;
+} */
+
+/* .nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+} */
+
+.navbar {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    background-color: var(--background);
+    color: var(--dark-font);
+}
+.navbar ul a{
+    position: relative;
+    display: block;
+    height: 100%;
+    color:rgb(31, 17, 17);
+    /* padding: 1rem; */
+    font-size: 2rem;
+    margin-left: 2rem;
+    text-transform: uppercase;
+}
+
+.navbar-links ul {
+    display: flex;
+}
+
+
+.navbar a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--dark-font);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.navbar a:hover{
+    color: var(--dark-font);
+    font-size: 1.9rem;
+}
+#book-now {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 10%;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Hamburger Menu (for mobile) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.bar {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    border-radius: 3px;
+}
+
+/* "X" Icon for the Close Button */
+.close-icon {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Show the "X" icon when the navigation links are active */
+.nav-links.active + .hamburger .close-icon {
+    display: block;
+}
+
+/* Home Section */
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../imgs/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content span{
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    padding-bottom: .5rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.home .content h3{
+    color: var(--black);
+    font-size: 8rem;
+    line-height: 8rem;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+/* about  */
+/* CSS for the About Us section */
+#about {
+    background-color: #fff;
+    padding-top: 4rem; /* Adjust the padding as needed */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column; /* Display image and text in a column (vertical) */
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+     margin-right: 5rem; /* Adjust the margin as needed to create space between the image and text */
+     font-size: 20rem;
+}
+
+.about-img img {
+    max-width: 70%; /* Image width takes up 70% of its container */
+    height: auto; /* Maintains the image's aspect ratio */
+}
+
+.about-container h2 {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    color: #333;
+    margin-bottom: 1rem; /* Adjust the margin as needed */
+}
+
+.about-container p {
+    font-size: 1rem; /* Adjust the font size as needed */
+    color: #555;
+    margin-bottom: 1rem; /* Adjust the margin as needed */
+}
+
+
+/* .about {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: url(../imgs/salon.jpg);
+        background-size: cover;
+        background-position: center;
+} */
+
+/* Other Sections */
+section {
+    background-color: #fff;
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: .625rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
