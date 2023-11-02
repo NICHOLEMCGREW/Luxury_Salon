@@ -350,6 +350,130 @@ nav ul li a:hover:after{
     transition: background-color 0.3s; /* Smooth transition effect on hover */
 }
 
+/* Pricing  */
+/* CSS for the Pricing section */
+#pricing {
+    background-color: #f7f7f7; /* Background color for the pricing section */
+    padding: 2rem;
+    text-align: center;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap pricing items to the next row if there's not enough space */
+    justify-content: center;
+    align-items: flex-start; /* Align pricing items at the top of their containers */
+    text-align: left;
+}
+
+.pricing-item {
+    flex: 1; /* Equal width for each pricing item in a row */
+    padding: 1rem; /* Adjust the padding as needed */
+    background-color: #fff; /* Background color for each pricing item */
+    border: 1px solid #e0e0e0; /* Border to separate pricing items */
+    margin: 1rem; /* Add margin around pricing items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.pricing-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem; /* Adjust the margin as needed */
+}
+
+.pricing-item ul {
+    list-style-type: none; /* Remove list bullet points */
+}
+
+.pricing-item li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem; /* Adjust the margin as needed */
+}
+
+/* Add styles for hover effects or additional styling as desired */
+.pricing-item:hover {
+    transform: scale(1.05); /* Example scale effect on hover */
+    transition: transform 0.3s; /* Smooth transition effect on hover */
+}
+
+/* Contact  */
+/* CSS for the Contact section */
+#contact {
+    background-color: #f7f7f7; /* Background color for the contact section */
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap contact elements to the next row if there's not enough space */
+    justify-content: center;
+    align-items: flex-start; /* Align elements at the top of their containers */
+    text-align: left;
+}
+
+address, .contact-info, .subscription-form, .salon-hours {
+    flex: 1; /* Equal width for each contact element in a row */
+    padding: 1rem; /* Adjust the padding as needed */
+    margin: 1rem; /* Add margin around contact elements */
+    background-color: #fff; /* Background color for each contact element */
+    border: 1px solid #e0e0e0; /* Border to separate contact elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.contact-info, .subscription-form, .salon-hours {
+    padding: 2rem; /* Increase padding for larger sections */
+}
+
+.contact-info p, .subscription-form h3, .salon-hours h3 {
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    color: #333;
+    margin-bottom: 1rem; /* Adjust the margin as needed */
+}
+
+.contact-info ul {
+    list-style-type: none; /* Remove list bullet points */
+}
+
+.contact-info li {
+    font-size: 1rem; /* Adjust the font size as needed */
+    color: #555;
+    margin-bottom: 0.5rem; /* Adjust the margin as needed */
+}
+
+.subscription-form input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.subscription-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* Style the social media links as needed */
+.contact-info ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+/* Add styles for hover effects or additional styling as desired */
+.contact-info:hover,
+.subscription-form:hover,
+.salon-hours:hover {
+    transform: scale(1.05); /* Example scale effect on hover */
+    transition: transform 0.3s; /* Smooth transition effect on hover */
+}
+
+/* You can add specific styles for the subscription form and social media links if desired */
 
 
 /* Other Sections */
@@ -368,6 +492,7 @@ section p {
     font-size: 1rem;
     color: #555;
 }
+
 
 /* Footer */
 footer {
