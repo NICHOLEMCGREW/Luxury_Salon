@@ -38,7 +38,7 @@
 }
 
 body {
-    background: rgb(96, 90, 100);
+    background: black;
 }
 
 html{
@@ -84,8 +84,7 @@ a {
  
 /* Header  */
 header {
-    padding-top: 1.5rem; 
-    padding-bottom: 1.5rem;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -96,7 +95,7 @@ header {
     background-color: var(--background);
     margin: 0 auto;
     z-index: 1000;
-    border-radius: 0 0 10px 10px;
+    /* border-radius: 0 0 10px 10px; */
 }
 header .logo {
     font-size:  2.5rem;
@@ -135,7 +134,7 @@ nav {
     justify-content: space-between;
     background-color: var(--background);
     color: var(--dark-font);
-    padding: 10px 20px;
+    /* padding: 5px 10px; */
     align-items: center;
 }
 
@@ -236,14 +235,15 @@ nav ul li a:hover:after{
 }
 
 /* Home Section */
-.home{
-    min-height: 100vh;
+.home {
     display: flex;
     align-items: center;
-    background: url(../imgs/background.jpg);
-    background-size: cover;
-    background-position: center;
+    background: url(../imgs/b4.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
 }
+
 
 .home .content{
     max-width: 60rem;
@@ -339,16 +339,16 @@ nav ul li a:hover:after{
     justify-items: center;
 }
 
-/* Common styles for all service items */
+
 .service-item {
     background-color: #fff;
-    padding: 3rem; /* Increase the padding for more space inside the tile */
+    padding: 1rem; /* Increase the padding for more space inside the tile */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
     transition: transform 0.2s;
-    width: 300px; /* Adjust the width to make the tiles wider */
-    height: 250px; /* Adjust the height to make the tiles taller */
+    width: 200px; 
+    height: 200px; 
 }
 
 /* Add any other styles as needed */
