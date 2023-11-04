@@ -238,10 +238,11 @@ nav ul li a:hover:after{
 .home {
     display: flex;
     align-items: center;
-    background: url(../imgs/b4.jpg);
+    background: url(../imgs/mainBackground.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position:right;
+    max-height: 100vh;
 }
 
 
@@ -376,7 +377,7 @@ nav ul li a:hover:after{
 }
 
 .service-item.nails {
-    background-image: url('/imgs/nails.jpg'); /* Replace with the actual image path */
+    background-image: url('/imgs/brows.jpg'); /* Replace with the actual image path */
     background-size: cover;
     background-position: center;
     color: #333; /* Adjust text color as needed */
