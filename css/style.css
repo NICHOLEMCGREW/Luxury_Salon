@@ -285,13 +285,20 @@ nav ul li a:hover:after{
 .home {
     display: flex;
     align-items: center;
-    background: url(../imgs/bg/top.jpg);
-    background-size: cover;
+    background: url(../imgs/bg/rosebg.jpeg);
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    /* zoom: -10%;
+    top: -100%;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    padding: 11px; */
     
-    max-height: 100vh;
-    /* padding-top: 75%;  */
+    /* max-height: 100vh; */
+    /* padding-top: 50%; */
+    /* width: 100%;  */
     /* padding-bottom: -55%;  */
     /* width: 100%; */
     /* background-image: url(../imgs/bg/annika-palmari-kFZOUO2A6C8-unsplash.jpg);
@@ -722,14 +729,142 @@ section p {
 
 /* Footer */
 footer {
-    background-color: #333;
+    background: linear-gradient(to right, #00093c, #2d0b00);
     color: #fff;
+    padding: 60px 0;
+    font-size: 13px;
     text-align: center;
-    padding: .625rem 0;
 }
 
+/* Container for columns */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual column styles */
+.column {
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    text-align: left;
+}
+
+/* Heading styles */
+.column h3 {
+    margin: 0;
+    position: relative;
+    font-size: 18px;
+}
+
+/* Add the underline to the heading */
+.column h3 .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #fff;
+}
+
+/* Icon styles */
+.column i {
+    color: #ccc;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* Social icons */
+.social-icons ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social-icons li a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons li a:hover {
+    color: #ccc;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+form input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    color: #ccc;
+    padding: 5px;
+}
+
+form button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Address styles */
+address {
+    color: #ccc;
+    text-align: left;
+    margin: 20px 0;
+}
+
+/* Horizontal rule styles */
+hr {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Copyright text styles */
+.copy-right {
+    color: #ccc;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Animations */
+.underline span {
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+    100% {
+        left: calc(100% + 20px);
+    }
+}
+
+
+
 /* Responsive Styles */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .nav-links {
         display: none;
         flex-direction: column;
@@ -749,4 +884,4 @@ footer {
     .hamburger {
         display: flex;
     }
-}
+} */
