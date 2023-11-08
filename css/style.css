@@ -2,17 +2,14 @@
 
 
 :root{
-    --background: rgba(209, 171, 122);
-    --primary-color: #8a6d46;
-    --header: #c7aa84;
+    --soft-peach: #FFB6C1;
+    --rich-earthy-gree: #556B2F;
+    --deep-mauve: #800080;
     --hover: #625b5b;
-    --dark-font: #2a201c;
-    --dark-bg: rgba(0,0,0,.7);
+    --light-cream: #FFFFF0;
+    --background: #4d7f79;
     --border: .1rem solid #aaa;
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-}
-
-/* :root{
     --rose-gold: #B76E79;
     --gold: #FFD700;
     --silver: #C0C0C0;
@@ -23,7 +20,7 @@
     --hover2: #B76E79;
     --border: .1rem solid #aaa;
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-} */
+}
 
 
 *{
@@ -38,7 +35,7 @@
 }
 
 body {
-    background: black;
+    background: var(--light-cream);
 }
 
 html{
@@ -57,7 +54,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background-color: var(--primary-color);
+    background-color: var(--soft-peach);
 }
 
 section{
@@ -73,14 +70,14 @@ a {
     -o-transition: 0.5s ease-in-out;
 }
 
-.heading{
+/* .heading{
     text-align: center;
-    color: var(--primary-color);
+    color: var(--lavender);
     text-transform: uppercase;
     margin-bottom: 3rem;
     margin-top: 3rem;
     font-size: 4rem;
-}
+} */
  
 /* Header  */
 header {
@@ -92,7 +89,7 @@ header {
     position: sticky;
     top: 0;
     left: 0; right: 0;
-    background-color: var(--background);
+    background-color: var(--rose-gold);
     margin: 0 auto;
     z-index: 1000;
     /* border-radius: 0 0 10px 10px; */
@@ -102,17 +99,21 @@ header .logo {
     margin: .5rem;
     font-weight: bolder;
     color: var(--black);
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
-.logo img {
+/* header .logo:hover {
+    font-size:  3.5rem;
+    color: var(--lavender);
+} */
+/* .logo img {
     display: flex;
     width: 20%;
     height: 20%;
     margin: 0 5%;
-}
+} */
 
-.btn{
+/* .btn{
     margin-top: 1rem;
     display: inline-block;
     background: var(--primary-color);
@@ -120,11 +121,11 @@ header .logo {
     font-size: 2rem;
     cursor: pointer;
     padding: 1rem 3rem;
-}
+} */
 
-.btn:hover{
+/* .btn:hover{
     background: var(--hover);
-}
+} */
 
 /* Navigation */
 nav {
@@ -132,10 +133,11 @@ nav {
     display: flex;
     position: relative;
     justify-content: space-between;
-    background-color: var(--background);
-    color: var(--dark-font);
-    /* padding: 5px 10px; */
+    background-color: var(--light-cream);
+    /* color: var(--soft-peach); */
+    padding: 5px 10px;
     align-items: center;
+    box-shadow: var(--box-shadow);
 }
 
 /* .logo {
@@ -161,14 +163,16 @@ nav {
     display: flex;
     position: relative;
     justify-content: space-around;
-    background-color: var(--background);
-    color: var(--dark-font);
+    background-color: var(--rose-gold);
+    color: #fff;
+
 }
 .navbar ul a{
     position: relative;
     display: block;
     height: 100%;
-    color:rgb(31, 17, 17);
+    color: #fff;
+
     /* padding: 1rem; */
     font-size: 2rem;
     margin-left: 2rem;
@@ -197,15 +201,26 @@ nav ul li a:hover:after{
     color: var(--dark-font);
     font-size: 1.9rem;
 }
+
+
 #book-now {
-    background-color: #ff6f61;
-    color: #fff;
-    border: none;
+    background-color: #c08081; /* Your rose gold color variable */
+    color: #fff; /* White text color for contrast */
+    padding: 10px 20px;
     border-radius: 10%;
     padding: 5px 10px;
     cursor: pointer;
-}
-
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  
+    /* Add other button styling here, like font size and text-transform */
+  }
+  
+  #book-now:hover {
+    background-color: #e1bcbc; /* Lighter rose gold for hover effect */
+  }
+  
 /* Hamburger Menu (for mobile) */
 .hamburger {
     display: none;
@@ -234,15 +249,55 @@ nav ul li a:hover:after{
     display: block;
 }
 
+/* Style the modal container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Style the modal content */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+/* Style the close button */
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
 /* Home Section */
 .home {
     display: flex;
     align-items: center;
-    background: url(../imgs/mainBackground.jpg);
-    background-size: contain;
+    background: url(../imgs/bg/top.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position:right;
+    background-position: center;
+    
     max-height: 100vh;
+    /* padding-top: 75%;  */
+    /* padding-bottom: -55%;  */
+    /* width: 100%; */
+    /* background-image: url(../imgs/bg/annika-palmari-kFZOUO2A6C8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    /* width: 100%; Adjust width to control the aspect ratio */
 }
 
 

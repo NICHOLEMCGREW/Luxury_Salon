@@ -281,4 +281,9 @@ nav ul li a:hover:after{
   .service-item:hover {
     transform: scale(1.05);
   }
+  .service-item img {
+    width: 10%; /* Set the width to "auto" to match the image's natural size */
+    height: auto; /* Set the height to "auto" to match the image's natural size */
+    /* image-rendering: pixelated; Maintain image sharpness */
+}
   
