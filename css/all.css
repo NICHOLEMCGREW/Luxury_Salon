@@ -204,21 +204,19 @@ nav ul li a:hover:after{
 
 
 #book-now {
-    background-color: #c08081; /* Your rose gold color variable */
-    color: #fff; /* White text color for contrast */
+    background-color: #c08081; 
+    color: #fff; 
     padding: 10px 20px;
     border-radius: 10%;
     padding: 5px 10px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* Smooth hover transition */
-  
-    /* Add other button styling here, like font size and text-transform */
+    transition: background-color 0.3s ease; 
   }
   
   #book-now:hover {
-    background-color: #e1bcbc; /* Lighter rose gold for hover effect */
+    background-color: #e1bcbc; 
   }
   
 /* Hamburger Menu (for mobile) */
@@ -556,6 +554,42 @@ nav ul li a:hover:after{
     transition: transform 0.3s; /* Smooth transition effect on hover */
 }
 
+
+
+/* .subscription-form {
+    flex: 1;
+    text-align: left;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.subscription-form h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.subscription-form input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.subscription-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+} */
+
 /* Contact  */
 /* CSS for the Contact section */
 #contact {
@@ -613,41 +647,6 @@ nav ul li a:hover:after{
     font-size: 1.5rem;
     color: #333;
 }
-
-.subscription-form {
-    flex: 1;
-    text-align: left;
-    padding: 2rem;
-    background-color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin: 1rem;
-}
-
-.subscription-form h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-.subscription-form input[type="email"] {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.subscription-form button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
 .salon-hours {
     flex: 1;
     text-align: left;
@@ -797,7 +796,7 @@ footer {
 }
 
 /* Form styles */
-form {
+/* form {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -817,7 +816,7 @@ form button {
     border: 0;
     background: transparent;
     cursor: pointer;
-}
+} */
 
 /* Address styles */
 address {

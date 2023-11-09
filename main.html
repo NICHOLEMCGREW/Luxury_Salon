@@ -3,264 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/f4e8681ba1.js" crossorigin="anonymous"></script>
     <script src="main.js" defer></script>
     <title>Rose Salon</title>
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Header/Navigation -->
     <header class="header">
-        <nav class="navbar">
-        <a href="#home" class="logo">Rose Salon
-        </a>
-        <div class="navbar-links">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-        <!-- Modal Trigger Button -->
-    <button id="book-now">Book Now</button>
+        <a href="#home" class="header_logo">Rose Salon</a>    
+        
+        <div class="header_toggle">
+            <i class="fa-solid fa-bars" id="header-toggle"></i>
+        </div>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" id="closeModal">&times;</span>
-            <h2>Book an Appointment</h2>
-            <!-- Add your form elements, calendar, and contact options here -->
-        </div>
-    </div>
-        <div class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-    </nav>
+        <nav class="nav" id="nav-menu">
+            <div class="nav_content bd-grid">
+                <a href="#" class="nav_perfil">
+                    <div class="nav_img">
+                        <!-- <img src="imgs/lashes.jpg" alt=""> -->
+                    </div>
+
+                    <div>
+                        <span class="nav_name">Rose</span>
+                        <span class="nav_name">Salon</span>
+                    </div>
+                </a>
+
+                <div class="nav_menu">
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="#home" class="nav_link active"></a>Home</li>
+                        
+                        <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+
+
+                        <li class="nav_item dropdown">
+                            <a href="#services" class="nav_link dropdown_link">Services <i class="fa-solid fa-chevron-down dropdown_icon" ></i></a>
+
+                            <ul class="dropdown_menu">
+                                <li class="dropdown_item"><a href="" class="nav_link">About me</a></li>
+                                <li class="dropdown_item"><a href="" class="nav_link">Location</a></li>
+                                <li class="dropdown_item"><a href="" class="nav_link">Studies</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav_item"><a href="#pricing" class="nav_link">Pricing</a></li>
+
+                        <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 </header>
-    <!-- Home Section -->
-
-    <section class="home" id="home">
-
-        <div class="content">
-            <!-- <span>Welcome</span> -->
-            <!-- <h3>Beauty<br>Inside <br> body <br> & Out</h3> -->
-        </div>
-    
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="about-img"><img src="imgs/salon.jpg" alt=""></div>
-        <div class="about-container">
-            <h2>Welcome to Rose Salon</h2>
-        <p>Where beauty and style unite. With over two decades of dedicated service, we are a trusted name in the community.Our passionate team of stylists and beauticians stays at the forefront of trends and techniques to ensure you leave our salon feeling stunning and refreshed. At Rose Salon, we embrace your uniqueness and create tailored experiences. Whether you need a trim or a complete transformation, we've got you covered. We prioritize your satisfaction and use top-quality products to enhance your hair and skin's health and beauty. Join us in the journey to your best self.</p>
-        </div>
-    </section>
-    
-    <section id="services">
-        <div class="services-container">
-            <h2>Rose Services</h2>
-            <div class="services-grid">
-
-                <a href="/services.html">
-                    <div class="service-item hair">
-                        <h3>Haircuts & Styling</h3>
-                    </div>
-                </a>
-                
-
-                <a href="/services.html">
-                    <div class="service-item brows-lashes">
-                        <h3>Color & Highlights</h3>
-                    </div>
-                </a>
-                
-                
-                <a href="/services.html">
-                    <div class="service-item nails">
-                        <h3>Brows & Lashes</h3>
-                    </div>
-                </a>
-                
-
-                <a href="/services.html">
-                    <div class="service-item massage">
-                        <h3>Texture & Treatments</h3>
-                    </div>
-                </a>
-
-                <a href="/services.html">
-                    <div class="service-item face-skin">
-                        <h3>Special Occasion Styling</h3>
-                    </div>
-                </a>
-
-                <a href="/services.html">
-                    <div class="service-item beauty-packages">
-                        <h3>Beauty Packages</h3>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    
-    
-
-    <!-- Services Section
-    <section id="services">
-        <div class="services-container">
-            <h2>Rose Services</h2>
-            <div class="service">
-                <h3>Haircuts & Styling</h3>
-                <p>Experience the latest trends and classic styles. Our skilled stylists provide haircuts and styling that match your unique personality and preferences.</p>
-            </div>
-            <div class="service">
-                <h3>Color & Highlights</h3>
-                <p>Elevate your look with our expert color and highlights services. Whether you want a subtle change or a bold transformation, we've got you covered.</p>
-            </div>
-            <div class="service">
-                <h3>Hair Extensions</h3>
-                <p>Add volume and length to your hair with our high-quality hair extensions. Achieve the perfect style you've always dreamed of.</p>
-            </div>
-            <div class="service">
-                <h3>Texture & Treatments</h3>
-                <p>Restore and enhance your hair's texture with our professional treatments. We offer deep conditioning, keratin treatments, and more to keep your hair healthy.</p>
-            </div>
-            <div class="service">
-                <h3>Special Occasion Styling</h3>
-                <p>Look your best for special events and occasions. Our stylists can create elegant updos and glamorous styles that complement your outfit.</p>
-            </div>
-            <div class="service">
-                <h3>Makeup & Beauty</h3>
-                <p>Complete your look with our makeup and beauty services. From natural looks to glamorous makeovers, our makeup artists are here to enhance your beauty.</p>
-            </div>
-        </div>
-    </section> -->
-    
-
-    <!-- Pricing Section -->
-    <section id="pricing">
-        <div class="pricing-container">
-            <h2>Our Pricing</h2>
-            <a href="/services.html#cut-style" class="cut-style">
-            <div class="pricing-item hair">
-                <h3>Haircuts & Styling</h3>
-                <ul>
-                    <li>Women's Haircut: $40 - $80</li>
-                    <li>Men's Haircut: $25 - $50</li>
-                    <li>Kids Cut (12 and under): $20 - $40</li>
-                    <li>Blowout/Style: $30 - $60</li>
-                </ul>
-            </div>
-        </a>
-            <a href="/services.html#color-highlights" class="color-highlights">
-            <div class="pricing-item color-highlights">
-                <h3>Color & Highlights</h3>
-                <ul>
-                    <li>Single-Process Color: $60 - $100</li>
-                    <li>Full Highlights: $100 - $150</li>
-                    <li>Balayage/Ombre: $120 - $200</li>
-                </ul>
-            </div>
-            </a>
-
-            <a href="/services.html#brows-lashes" class="brows-lashes">
-            <div class="pricing-item brows-lashes">
-                <h3>Brows & Lashes</h3>
-                <ul>
-                    <li>Brow Threading: $20 - $40</li>
-                    <li>Eyelash Extensions: $100 - $200</li>
-                    <li>Eyebrow Waxing: $15 - $30</li>
-                </ul>
-            </div>
-            </a>
-
-            <a href="/services.html#texture-treatments" class="texture-treatments">
-            <div class="pricing-item texture-treatments">
-                <h3>Texture & Treatments</h3>
-                <ul>
-                    <li>Keratin Treatment: $200 - $400</li>
-                    <li>Deep Conditioning: $20 - $50</li>
-                    <li>Perms & Relaxers: $60 - $150</li>
-                </ul>
-            </div>
-            </a>
-
-            <a href="/services.html#special-occasion" class="special-occasion">
-            <div class="pricing-item special-occasion">
-                <h3>Special Occasion Styling</h3>
-                <ul>
-                    <li>Updo/Formal Styling: $50 - $100</li>
-                    <li>Bridal Hairstyling: $75 - $150</li>
-                    <li>Prom/Homecoming Styling: $40 - $80</li>
-                </ul>
-            </div>
-            </a>
-
-            <a href="/services.html#makeup-beauty" class="makeup-beauty">
-            <div class="pricing-item makeup-beauty">
-                <h3>Makeup & Beauty</h3>
-                <ul>
-                    <li>Makeup Application: $40 - $80</li>
-                    <li>Bridal Makeup: $60 - $120</li>
-                    <li>Eyelash Extensions: $100 - $200</li>
-                </ul>
-            </div>
-        </a>
-        </div>
-    </section>
-    
-
-    
-    
-    
-    <!-- <hr> -->
-    <!-- Footer -->
-<footer>
-    <div class="footer-content">
-        <div class="column">
-            <h3>Let's Connect <div class="underline"><span></span></div></h3>
-            <p><i class="fas fa-phone"></i> <a href="tel:+1234567890">Call: (123) 456-7890</a></p>
-            <p><i class="fas fa-comment-dots"></i> <a href="sms:+9876543210">Text: (987) 654-3210</a></p>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:info@rosesalon.com">Email: info@rosesalon.com</a></p>
-        </div>
-
-        <div class="column">
-            <h3>Subscribe for Exclusive Services and Specials <div class="underline"><span></span></div></h3>
-            <form>
-                <i class="far fa-envelope"></i>
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit"><i class="fas fa-arrow-right"></i></button>
-            </form>
-        </div>
-
-        <div class="column">
-            <h3><i class="far fa-clock"></i> Salon Hours <div class="underline"><span></span></div></h3>
-            <p>Monday - Thursday: 9:00 a.m. - 7:00 p.m.</p>
-            <p>Friday: Appointment Only</p>
-            <p>Saturday: 10:00 a.m. - 3:00 p.m.</p>
-            <p>Sunday: Appointment Only</p>
-        </div>
-
-        <div class="address-column">
-            <address>
-                <p><i class="far fa-map-marker-alt"></i> <a href="https://www.google.com/maps?q=1234+Salon+Street, Cityville, HA+54321" target="_blank">Get Directions</a></p>
-                <p>1234 Salon Street</p>
-                <p>Asheville, NC 54321</p>
-                <span><i class="far fa-wheelchair"></i> Wheelchair Accessible</span>
-            </address>
-        </div>
-    </div>
-
-    <hr>
-    <p class="copy-right">&copy; 2023 Rose Salon. All rights reserved. Site designed and maintained by Nichole McGrew</p>
-</footer>
-
 
 </body>
 </html>

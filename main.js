@@ -1,50 +1,22 @@
-// <!-- JavaScript to control the modal -->
-   
-        // Get the modal
-        var modal = document.getElementById("myModal");
+const showMenu = (toggleId, navId) => {
+    const toggle = document.getElementById(toggleId),
+    nav = document.getElementById(navId)
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("book-now");
+    if(toggle && nav) {
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('show')
+            toggle.classList.toggle('bx-x')
+        })
+    }
+}
 
-        // Get the close button
-        var closeBtn = document.getElementById("closeModal");
+showMenu('header-toggle','nav-menu')
 
-        // When the user clicks the button, open the modal
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
+const navLink = document.getElementById('.nav_link')
 
-        // When the user clicks on the close button, close the modal
-        closeBtn.onclick = function() {
-            modal.style.display = "none";
-        }
+function linkAction(){
+    navLink.forEach(n => n.classList.remove('active'))
+    this.classList.add('active')
+}
 
-        // When the user clicks outside the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-
-
-
-document.getElementById('book-now').addEventListener('click', function() {
-    // Add your booking functionality here
-    alert('Booking feature coming soon!');
-});
-
-// document.querySelector('.hamburger').addEventListener('click', function() {
-//     document.querySelector('.nav-links').classList.toggle('active');
-// });
-
-
-// <!-- JavaScript for the Hamburger Menu -->
-    const navLinks = document.querySelector('.nav-links');
-    const hamburger = document.querySelector('.hamburger');
-
-    // Toggle the "active" class on the navigation links when the hamburger is clicked
-    hamburger.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-    });
-
-
+navLink.forEach(n => n.addEventListener('click', linkAction))
