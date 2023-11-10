@@ -9,52 +9,45 @@
     <title>Rose Salon</title>
 </head>
 <body>
-    <!-- Header/Navigation -->
+
+    <!-- HEADER/NAV -->
     <header class="header">
-        <a href="#home" class="header_logo">Rose Salon</a>    
-        
-        <div class="header_toggle">
-            <i class="fa-solid fa-bars" id="header-toggle"></i>
-        </div>
-
-        <nav class="nav" id="nav-menu">
-            <div class="nav_content bd-grid">
-                <a href="#" class="nav_perfil">
-                    <div class="nav_img">
-                        <!-- <img src="imgs/lashes.jpg" alt=""> -->
-                    </div>
-
-                    <div>
-                        <span class="nav_name">Rose</span>
-                        <span class="nav_name">Salon</span>
-                    </div>
-                </a>
-
-                <div class="nav_menu">
-                    <ul class="nav_list">
-                        <li class="nav_item"><a href="#home" class="nav_link active"></a>Home</li>
-                        
-                        <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
-
-
-                        <li class="nav_item dropdown">
-                            <a href="#services" class="nav_link dropdown_link">Services <i class="fa-solid fa-chevron-down dropdown_icon" ></i></a>
-
-                            <ul class="dropdown_menu">
-                                <li class="dropdown_item"><a href="" class="nav_link">About me</a></li>
-                                <li class="dropdown_item"><a href="" class="nav_link">Location</a></li>
-                                <li class="dropdown_item"><a href="" class="nav_link">Studies</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav_item"><a href="#pricing" class="nav_link">Pricing</a></li>
-
-                        <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+        <a href="#home" class="logo">Rose Salon</a>
+    
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <i class="fa-solid fa-x" id="close-icon"></i>
+        </label>
+    
+        <nav class="navbar">
+            <a href="#home" style="--i:0;">Home</a>
+            <a href="#about" style="--i:1;">About</a>
+            <a href="#services" style="--i:2;">Services</a>
+            <a href="#pricing" style="--i:3;">Pricing</a>
+            <a href="contact.html" style="--i:4;">Contact</a>
         </nav>
-</header>
+    </header>
+
+    <!-- Home Section -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <!-- <span>Welcome</span> -->
+            <!-- <h3>Beauty<br>Inside <br> body <br> & Out</h3> -->
+        </div>
+    
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-img"><img src="imgs/salon.jpg" alt=""></div>
+        <div class="about-container">
+            <h2>Welcome to Rose Salon</h2>
+        <p>Where beauty and style unite. With over two decades of dedicated service, we are a trusted name in the community.Our passionate team of stylists and beauticians stays at the forefront of trends and techniques to ensure you leave our salon feeling stunning and refreshed. At Rose Salon, we embrace your uniqueness and create tailored experiences. Whether you need a trim or a complete transformation, we've got you covered. We prioritize your satisfaction and use top-quality products to enhance your hair and skin's health and beauty. Join us in the journey to your best self.</p>
+        </div>
+    </section>
 
 </body>
 </html>
