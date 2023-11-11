@@ -164,7 +164,6 @@ nav {
     justify-content: space-around;
     background-color: var(--rose-gold);
     color: #fff;
-
 }
 .navbar ul a{
     position: relative;
@@ -326,7 +325,6 @@ nav ul li a:hover:after{
 }
 
 /* about  */
-/* CSS for the About Us section */
 #about {
     background-color: #fff;
     padding-top: 4rem; /* Adjust the padding as needed */
@@ -374,7 +372,6 @@ nav ul li a:hover:after{
 } */
 
 /* services  */
-/* CSS for the Services section */
 #services {
     background-color: #f7f7f7;
     padding: 4rem 0;

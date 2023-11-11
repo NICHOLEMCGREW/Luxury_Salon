@@ -3,32 +3,15 @@
 :root{
     --soft-peach: #FFB6C1;
     --rich-earthy-gree: #556B2F;
-    --deep-mauve: #800080;
     --hover: #625b5b;
     --light-cream: #FFFFF0;
-    --background: #4d7f79;
-    --border: .1rem solid #aaa;
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     --rose-gold: #B76E79;
-    --gold: #FFD700;
     --silver: #C0C0C0;
-    --mint-green: ##98FB98;
     --lavender: #E6E6FA;
     --off-white: #f2e2ce;
-    --dark: #262621;
-    --hover2: #B76E79;
     --border: .1rem solid #aaa;
-    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    --header-height: 3rem;
-    
-    --rose-gold-light: #C4C7F5;
-    --dark-color: #0E1026;
-    --white-color: #FBFBFB;
-    
-    --nav-name-font-size: 1.5rem;
-    --normal-font-size: .938rem;
-    
-    /* --z-fixed: 100; */
+    --lilac: #C4C7F5;
 }
 
 *{
@@ -44,9 +27,6 @@
 
 body{
     min-height: 100vh;
-    /* background: url(bailey-zindel-NRQV-hBF10M-unsplash.jpg) no-repeat; */
-    /* background-size: cover;
-    background-position: center; */
 }
 
 html{
@@ -65,7 +45,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background-color: var(--soft-peach);
+    background-color: var(--rose-gold);
 }
 
 a {
@@ -77,24 +57,19 @@ a {
     -o-transition: 0.5s ease-in-out;
 }
 
-/* section{
-    padding: 2rem 4.5%;
-} */
-
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1.3rem 10%;
-    background: var(--rose-gold);
-    /* background: rgba(0,0,0,.1); */
-    /* backdrop-filter: blur(50px); */
+/* header/nav  */
+header{
+    padding: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+    position: sticky;
+    top: 0;
+    left: 0; right: 0;
+    background-color: var(--rose-gold);
+    margin: 0 auto;
     z-index: 1000;
-    color: var(--light-cream);
 }
 .header::before{
     content: '';
@@ -103,8 +78,8 @@ a {
     left: -100%;
     width: 100%;
     height: 100%;
-    /* background: rgba(0,0,0,.1); */
-    /* backdrop-filter: blur(50px); */
+    background: rgba(0,0,0,.1);
+    backdrop-filter: blur(50px);
     z-index: -1;
 }
 .header::after{
@@ -114,24 +89,33 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent); */
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
     transition: .5s;
 }
 .header:hover::after{
     left: 100%;
 }
-.logo{
-    font-size: 2rem;
+header .logo {
+    font-size:  2.25rem;
+    margin: .5rem;
+    font-weight: bolder;
     color: var(--light-cream);
+    text-transform: uppercase;
+}
+header .logo:hover{
+    font-size:  2.5rem;
 }
 
 .navbar a{
-    font-size: 1.15rem;
+    font-size: 1.7rem;
     color: var(--light-cream);
     font-weight: 500;
     margin-left: 2.5rem;
 }
-
+.navbar a:hover{
+    /* color: var(--soft-peach); */
+    font-size: 2.25rem;
+}
 #check{
     display: none;
 }
@@ -140,7 +124,7 @@ a {
     position: absolute;
     right: 5%;
     font-size: 2.8rem;
-    color: var(--light-cream);
+    color: #fff;
     cursor: pointer;
     display: none;
 }
@@ -172,12 +156,7 @@ a {
         width: 100%;
         height: 0;
         background: var(--rose-gold);
-        width: 50%;
-        /* align-items: center;
-        justify-content: center;
-        margin-left: 25%;
-        margin-right: 25%; */
-        /* backdrop-filter: blur(50px); */
+        backdrop-filter: blur(50px);
         box-shadow: var(--box-shadow) ;
         overflow: hidden;
         transition: .3s ease;
@@ -200,3 +179,527 @@ a {
         transition-delay: calc((.15s * var(--i)));
     }
 }
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: var(--light-cream);
+    background: url('/imgs/bg/rosebg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #695252, #cac5c9);
+    mix-blend-mode: multiply; /* You can adjust the blend mode */
+    opacity: 0.7; /* Adjust the opacity as needed */
+    z-index: -1;
+}
+
+.home .content {
+    max-width: 30rem;
+    z-index: 1; /* Ensure content appears above the background */
+}
+
+.home .content span {
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    padding-bottom: .5rem;
+}
+
+.home .content h3 {
+    color: var(--black);
+    font-size: 8rem;
+    line-height: 8rem;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+
+/* about  */
+#about {
+    background-color: #fff;
+    padding-top: 4rem; /* Adjust the padding as needed */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column; /* Display image and text in a column (vertical) */
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+     margin-right: 5rem; /* Adjust the margin as needed to create space between the image and text */
+     font-size: 20rem;
+}
+
+.about-img img {
+    max-width: 70%; /* Image width takes up 70% of its container */
+    height: auto; /* Maintains the image's aspect ratio */
+}
+
+.about-container h2 {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    color: #333;
+    margin-bottom: 1rem; /* Adjust the margin as needed */
+}
+
+.about-container p {
+    font-size: 1rem; /* Adjust the font size as needed */
+    color: #555;
+    margin-bottom: 1rem; /* Adjust the margin as needed */
+}
+
+/* services  */
+#services {
+    background-color: #f7f7f7;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Set to 3 columns */
+    gap: 1rem;
+    justify-items: center;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 1rem; /* Increase the padding for more space inside the tile */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 200px; 
+    height: 150px; 
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    color: var(--light-cream);
+    margin-bottom: 1rem;
+}
+
+.service-item.cut-style {
+    background-image: url('/imgs/salonServices/cut-style.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Text color for better visibility on the image */
+}
+
+.service-item.color-highlight {
+    background-image: url('/imgs/salonServices/color-highlight.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #333; /* Adjust text color as needed */
+}
+
+.service-item.brows-lashes {
+    background-image: url('/imgs/salonServices/brows-lashes.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Text color for better visibility on the image */
+}
+
+.service-item.face-skin {
+    background-image: url('/imgs/salonServices/face-skin.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Text color for better visibility on the image */
+}
+
+.service-item.makeup-beauty {
+    background-image: url('/imgs/salonServices/makeup-beauty.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Text color for better visibility on the image */
+}
+
+.service-item.special-occasion {
+    background-image: url('/imgs/salonServices/special-occasion.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Text color for better visibility on the image */
+}
+/* Hover effect */
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+
+/* Pricing  */
+/* CSS for the Pricing section */
+#pricing {
+    background-color: #f7f7f7; /* Background color for the pricing section */
+    padding: 2rem;
+    text-align: center;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap pricing items to the next row if there's not enough space */
+    justify-content: center;
+    align-items: flex-start; /* Align pricing items at the top of their containers */
+    text-align: left;
+}
+
+.pricing-item {
+    flex: 1; /* Equal width for each pricing item in a row */
+    padding: 1rem; /* Adjust the padding as needed */
+    background-color: #fff; /* Background color for each pricing item */
+    border: 1px solid #e0e0e0; /* Border to separate pricing items */
+    margin: 1rem; /* Add margin around pricing items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.pricing-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem; /* Adjust the margin as needed */
+}
+
+.pricing-item ul {
+    list-style-type: none; /* Remove list bullet points */
+}
+
+.pricing-item li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem; /* Adjust the margin as needed */
+}
+
+/* Add styles for hover effects or additional styling as desired */
+.pricing-item:hover {
+    transform: scale(1.05); /* Example scale effect on hover */
+    transition: transform 0.3s; /* Smooth transition effect on hover */
+}
+
+
+
+/* .subscription-form {
+    flex: 1;
+    text-align: left;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.subscription-form h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.subscription-form input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.subscription-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+} */
+
+/* Contact  */
+/* CSS for the Contact section */
+#contact {
+    background-color: #f2f2f2;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.phone p, .email p {
+    display: flex;
+    align-items: center;
+}
+
+.phone i, .email i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    color: #333;
+}
+
+.social-media ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media ul li {
+    margin: 0 1rem;
+}
+
+.social-media a {
+    font-size: 1.5rem;
+    color: #333;
+}
+.salon-hours {
+    flex: 1;
+    text-align: left;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.salon-hours h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.salon-hours p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.address {
+    flex: 1;
+    text-align: left;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.address h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.address p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.address i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    color: #333;
+}
+
+.address a {
+    text-decoration: none;
+    color: #0077B5; /* LinkedIn blue color */
+}
+
+.address a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Other Sections */
+section {
+    background-color: #fff;
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 60px 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Container for columns */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual column styles */
+.column {
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    text-align: left;
+}
+
+/* Heading styles */
+.column h3 {
+    margin: 0;
+    position: relative;
+    font-size: 18px;
+}
+
+/* Add the underline to the heading */
+.column h3 .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #fff;
+}
+
+/* Icon styles */
+.column i {
+    color: #ccc;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* Social icons */
+.social-icons ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social-icons li a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons li a:hover {
+    color: #ccc;
+}
+
+/* Form styles */
+/* form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+form input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    color: #ccc;
+    padding: 5px;
+}
+
+form button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+} */
+
+/* Address styles */
+address {
+    color: #ccc;
+    text-align: left;
+    margin: 20px 0;
+}
+
+/* Horizontal rule styles */
+hr {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Copyright text styles */
+.copy-right {
+    color: #ccc;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Animations */
+.underline span {
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+    100% {
+        left: calc(100% + 20px);
+    }
+}
+

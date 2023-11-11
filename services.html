@@ -11,28 +11,24 @@
     <title>Rose Salon</title>
 
 <body>
-    <!-- Navigation -->
+    <!-- HEADER/NAV -->
     <header class="header">
+        <a href="#home" class="logo">Rose Salon</a>
+    
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <i class="fa-solid fa-x" id="close-icon"></i>
+        </label>
+    
         <nav class="navbar">
-        <a href="#home" class="logo">Rose Salon
-        </a>
-        <div class="navbar-links">
-        <ul>
-            <li><a href="/main.html">Home</a></li>
-            <li><a href="main.html#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-        <button id="book-now">Book Now</button>
-        <div class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-    </nav>
-</header>
+            <a href="#home" style="--i:0;">Home</a>
+            <a href="#about" style="--i:1;">About</a>
+            <a href="#services" style="--i:2;">Services</a>
+            <a href="#pricing" style="--i:3;">Pricing</a>
+            <a href="contact.html" style="--i:4;">Contact</a>
+        </nav>
+    </header>
 
 <!-- Services  -->
 
@@ -42,7 +38,7 @@
         <div class="services-grid">
             
             <div id="cut-style" class="service-item">
-                <img src="imgs/cut.png" alt="scissors and comb">
+                <img src="imgs/pricing/cut.png" alt="scissors and comb">
                 <h3>Haircuts & Styling</h3>
                 <p>Experience the latest trends and classic styles. Our skilled stylists provide haircuts and styling that match your unique personality and preferences.</p>
                 <ul>
@@ -53,8 +49,8 @@
                 </ul>
             </div>
 
-            <div id="color-highlights" class="service-item">
-                <img src="imgs/color-highlight.png" alt="color brush">
+            <div id="color-highlight" class="service-item">
+                <img src="imgs/pricing/color-highlight.png" alt="color brush">
                 <h3>Color & Highlights</h3>
                 <p>Elevate your look with our expert color and highlights services. Whether you want a subtle change or a bold transformation, we've got you covered.</p>
                 <ul>
@@ -65,7 +61,7 @@
             </div>
 
             <div id="brows-lashes" class="service-item">
-                <img src="imgs/brows-lashes.png" alt="eyes">
+                <img src="imgs/pricing/brows-lashes.png" alt="eyes">
                 <h3>Brows & Lashes</h3>
                 <p>Enhance your natural beauty with our brows and lashes services. We provide brow threading, eyelash extensions, and eyebrow waxing.</p>
                 <ul>
@@ -75,9 +71,9 @@
                 </ul>
             </div>
 
-            <div id="texture-treatments" class="service-item">
-                <img src="imgs/treatment.png" alt="treatment flower">
-                <h3>Texture & Treatments</h3>
+            <div id="face-skin" class="service-item">
+                <img src="imgs/pricing/face-skin.png" alt="spa facial">
+                <h3>Face & Skin</h3>
                 <p>Restore and enhance your hair's texture with our professional treatments. We offer keratin treatments, deep conditioning, and perms & relaxers.</p>
                 <ul>
                     <li>Keratin Treatment: $200 - $400</li>
@@ -86,8 +82,20 @@
                 </ul>
             </div>
 
+            
+            <div id="makeup-beauty" class="service-item">
+                <img src="imgs/pricing/makeup-beauty.png" alt="mirror">
+                <h3>Makeup & Beauty</h3>
+                <p>Complete your look with our makeup and beauty services. From natural looks to glamorous makeovers, our makeup artists are here to enhance your beauty.</p>
+                <ul>
+                    <li>Makeup Application: $40 - $80</li>
+                    <li>Bridal Makeup: $60 - $120</li>
+                    <li>Customizable Beauty Packages: Starting at $100</li>
+                </ul>
+            </div>
+            
             <div id="special-occasion" class="service-item">
-                <img src="imgs/special-occasion.png" alt="">
+                <img src="imgs/pricing/special-occasion.png" alt="special occasion hair style">
 
                 <h3>Special Occasion Styling</h3>
                 <p>Look your best for special events and occasions. Our stylists can create elegant updos and glamorous styles that complement your outfit.</p>
@@ -98,139 +106,9 @@
                 </ul>
             </div>
 
-            <div id="makeup-beauty" class="service-item">
-                <img src="imgs/mirror-makeup.png" alt="">
-                <h3>Makeup & Beauty</h3>
-                <p>Complete your look with our makeup and beauty services. From natural looks to glamorous makeovers, our makeup artists are here to enhance your beauty.</p>
-                <ul>
-                    <li>Makeup Application: $40 - $80</li>
-                    <li>Bridal Makeup: $60 - $120</li>
-                    <li>Customizable Beauty Packages: Starting at $100</li>
-                </ul>
-            </div>
-            
         </div>
     </div>
 </section>
 
-
-
-<!-- Contact Section -->
-<section id="contact">
-    <div class="contact-container">
-        
-        <p>Let's Connect!</p>
-        <div class="contact-info">
-            <p>Invest in your beauty!</p>
-            <div class="phone">
-                <p><i class="fa-solid fa-phone"></i> <a href="tel:+1234567890">Call: (123) 456-7890</a></p>
-                <p><i class="fa-solid fa-comment-dots"></i> <a href="sms:+9876543210">Text: (987) 654-3210</a></p>
-            </div>
-            
-            <div class="email">
-                <p><i class="fa-solid fa-envelope"></i> <a href="mailto:info@Rosesalon.com">Email: info@Rosesalon.com</a></p>
-            </div>
-            
-            <div class="social-media">
-                <ul>
-                    <li><a href="https://www.facebook.com/yourfacebookpage" id="facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.messenger.com/t/yourmessengerpage" id="messenger" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a></li>
-                    <li><a href="https://www.twitter.com/yourtwitterpage" id="twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="https://www.instagram.com/yourinstagrampage" id="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            
-            
-        </div>
-        <div class="subscription-form">
-            <h3>Subscribe for Exclusive Services and Specials</h3>
-            <form>
-                <input type="email" placeholder="Enter your email">
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-        <div class="salon-hours">
-            <h3><i class="fa-regular fa-clock"></i> Salon Hours</h3>
-            <p>Monday - Thursday: 9:00 a.m. - 7:00 p.m.</p>
-            <p>Friday: Appointment Only</p>
-            <p>Saturday: 10:00 a.m. - 3:00 p.m.</p>
-            <p>Sunday: Appointment Only</p>
-        </div>
-        <address>
-            <p><i class="fa-solid fa-location-dot"></i> <a href="https://www.google.com/maps?q=1234+Salon+Street, Cityville, HA+54321" target="_blank">Get Directions</a></p>
-            <p>1234 Salon Street</p>
-            <p>Asheville, NC 28801</p>
-            <span><i class="fa-solid fa-wheelchair-move"></i> Wheelchair Accessible</span>
-        </address>
-    </div>
-</section>
-
-
-
-
-<hr>
-<footer>
-    <div class="content">
-        <div class="top">
-            <div class="logo-details">
-                <i class="fab fa-slack"></i>
-                <span class="logo-name">Rose Salon</span>
-            </div>
-            <div class="media-icons">
-                <a href="https://www.facebook.com/yourfacebookpage" id="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.messenger.com/t/yourmessengerpage" id="messenger" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
-                <a href="https://www.twitter.com/yourtwitterpage" id="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/yourinstagrampage" id="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="link-boxes">
-            <ul class="box">
-                <li class="link_name">Contact Us</li>
-                <li><i class="fa-solid fa-phone"></i> <a href="tel:+1234567890">Call: (123) 456-7890</a></li>
-                <li><i class="fa-solid fa-comment-dots"></i> <a href="sms:+9876543210">Text: (987) 654-3210</a></li>
-                <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@Rosesalon.com">Email: info@Rosesalon.com</a></li>
-                <!-- <div class="media-icons">
-                    <a href="https://www.facebook.com/yourfacebookpage" id="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.messenger.com/t/yourmessengerpage" id="messenger" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
-                    <a href="https://www.twitter.com/yourtwitterpage" id="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/yourinstagrampage" id="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div> -->
-            </ul>
-            <ul class="box input-box">
-                <li class="link_name">Subscribe</li>
-                <li><input type="text" placeholder="Enter your email"></li>
-                <li><input type="button" value="Subscribe"></li>
-            </ul>
-            
-
-            <ul class="box">
-                <li class="link_name"><i class="fa-regular fa-clock"></i> Salon Hours</li>
-                <li><a href="#">Monday - Thursday: 9:00 a.m. - 7:00 p.m.</a></li>
-                <li><a href="#">Friday: Appointment Only</a></li>
-                <li><a href="#">Saturday: 10:00 a.m. - 3:00 p.m.</a></li>
-                <li><a href="#">Sunday: Appointment Only</a></li>
-            </ul>
-
-            <ul class="box">
-                <address>
-                    <p><i class="fa-solid fa-location-dot"></i> <a href="https://www.google.com/maps?q=1234+Salon+Street, Cityville, HA+54321" target="_blank">Get Directions</a></p>
-                    <p>1234 Salon Street</p>
-                    <p>Asheville, NC 28801</p>
-                    <span><i class="fa-solid fa-wheelchair-move"></i> Wheelchair Accessible</span>
-                </address>
-            </ul>
-            
-        </div>
-    </div>
-
-    <div class="bottom-details">
-        <div class="bottom_text">
-            <span class="copyright_text">&copy; 2023 Rose Salon. Site designed and maintained by <a href="#">Nichole McGrew.</a>All rights reserved</span>
-            <span class="policy_terms">
-                <a href="#">Terms & conditions</a>
-            </span>
-        </div>
-    </div>
-</footer>
 </head>    
 </body>
