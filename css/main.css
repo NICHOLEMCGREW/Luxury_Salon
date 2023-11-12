@@ -57,6 +57,10 @@ a {
     -o-transition: 0.5s ease-in-out;
 }
 
+section {
+    height: calc(100vh - 6rem); /* Adjust the value based on your header height */
+}
+
 /* header/nav  */
 header{
     padding: 0;
@@ -199,20 +203,22 @@ header .logo:hover{
     bottom: 0;
     left: 0;
     background: linear-gradient(to right, #695252, #cac5c9);
-    mix-blend-mode: multiply; /* You can adjust the blend mode */
-    opacity: 0.7; /* Adjust the opacity as needed */
+    mix-blend-mode: multiply;
+    opacity: 0.7;
     z-index: -1;
 }
 
 .home .content {
     max-width: 30rem;
-    z-index: 1; /* Ensure content appears above the background */
+    z-index: 1;
 }
 
 .home .content span {
     font-size: 3rem;
-    letter-spacing: .5rem;
-    padding-bottom: .5rem;
+    letter-spacing: 0.5rem;
+    margin-left: 2rem;
+    position: relative;
+    top: -1rem; /* Move the "Welcome" span up */
 }
 
 .home .content h3 {
@@ -220,7 +226,8 @@ header .logo:hover{
     font-size: 8rem;
     line-height: 8rem;
     font-weight: 900;
-    text-transform: capitalize;
+    margin-left: 2rem;
+    margin-top: 1rem; /* Add space between the lines of the h3 */
 }
 
 
@@ -250,8 +257,9 @@ header .logo:hover{
 }
 
 .about-container h2 {
-    font-size: 1.5rem; /* Adjust the font size as needed */
+    font-size: 2.5rem; /* Adjust the font size as needed */
     color: #333;
+    margin-right: 4rem;
     margin-bottom: 1rem; /* Adjust the margin as needed */
 }
 
@@ -261,7 +269,7 @@ header .logo:hover{
     margin-bottom: 1rem; /* Adjust the margin as needed */
 }
 
-/* services  */
+/* services */
 #services {
     background-color: #f7f7f7;
     padding: 4rem 0;
@@ -276,7 +284,8 @@ header .logo:hover{
 .services-container h2 {
     font-size: 2rem;
     color: #333;
-    margin-bottom: 2rem;
+    margin-top: -1.75rem;
+    margin-bottom: 1.75rem;
 }
 
 .services-grid {
@@ -288,13 +297,16 @@ header .logo:hover{
 
 .service-item {
     background-color: #fff;
-    padding: 1rem; /* Increase the padding for more space inside the tile */
+    padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
     transition: transform 0.2s;
-    width: 200px; 
-    height: 150px; 
+    width: 150px; 
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align text to the bottom */
 }
 
 .service-item h3 {
@@ -303,51 +315,54 @@ header .logo:hover{
     margin-bottom: 1rem;
 }
 
+/* Specific background images and styles for each service */
 .service-item.cut-style {
     background-image: url('/imgs/salonServices/cut-style.jpg'); 
     background-size: cover;
     background-position: center;
-    color: #fff; /* Text color for better visibility on the image */
+    color: #fff;
 }
 
 .service-item.color-highlight {
     background-image: url('/imgs/salonServices/color-highlight.jpg'); 
     background-size: cover;
     background-position: center;
-    color: #333; /* Adjust text color as needed */
+    color: #333;
 }
 
 .service-item.brows-lashes {
     background-image: url('/imgs/salonServices/brows-lashes.jpg'); 
     background-size: cover;
     background-position: center;
-    color: #fff; /* Text color for better visibility on the image */
+    color: #fff;
 }
 
 .service-item.face-skin {
     background-image: url('/imgs/salonServices/face-skin.jpg'); 
     background-size: cover;
     background-position: center;
-    color: #fff; /* Text color for better visibility on the image */
+    color: #fff;
 }
 
 .service-item.makeup-beauty {
     background-image: url('/imgs/salonServices/makeup-beauty.jpeg'); 
     background-size: cover;
     background-position: center;
-    color: #fff; /* Text color for better visibility on the image */
+    color: #fff;
 }
 
 .service-item.special-occasion {
     background-image: url('/imgs/salonServices/special-occasion.jpg'); 
     background-size: cover;
     background-position: center;
-    color: #fff; /* Text color for better visibility on the image */
+    color: #fff;
 }
+
 /* Hover effect */
 .service-item:hover {
     transform: scale(1.05);
 }
+
 
 
 /* Pricing  */
