@@ -5,6 +5,7 @@
     --rich-earthy-gree: #556B2F;
     --hover: #625b5b;
     --light-cream: #FFFFF0;
+    --light-cream: #333333;
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     --rose-gold: #B76E79;
     --silver: #C0C0C0;
@@ -305,15 +306,9 @@ header .logo:hover{
     margin-bottom: 1rem; */
     font-size: 5em;
     line-height: .8em;
-    font-weight: 500;
+    /* font-weight: 500; */
 }
 
-/* .services-txt p {
-    font-size: 1.2rem;
-    color: #666;
-    line-height: 1.6;
-    margin: .1rem 3rem;
-} */
 
 .services-txt h2 {
     font-size: 5rem;
@@ -324,13 +319,6 @@ header .logo:hover{
     color: var(--rose-gold);
     outline: #625b5b;
 }
-
-/* .services-txt img{
-    height: 50%;
-    width: 40%;
-    border-radius: 10px;
-    margin-top: 1rem;
-}  */
 
 .services-grid {
     display: grid;
@@ -411,53 +399,60 @@ header .logo:hover{
 
 
 
-/* Pricing  */
-/* CSS for the Pricing section */
 #pricing {
-    background-color: #f7f7f7; /* Background color for the pricing section */
-    padding: 2rem;
+    background-color: #f7f7f7;
+    padding: 4rem 2rem;
     text-align: center;
 }
 
+#pricing h2{
+    font-size: 3rem;
+    /* line-height: 1.1em; */
+    font-weight: 600;
+    /* background-clip: border-box; */
+    margin-top: -2rem;
+    color: black;
+    /* outline: #625b5b; */
+}
 .pricing-container {
     display: flex;
-    flex-wrap: wrap; /* Wrap pricing items to the next row if there's not enough space */
-    justify-content: center;
-    align-items: flex-start; /* Align pricing items at the top of their containers */
-    text-align: left;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .pricing-item {
-    flex: 1; /* Equal width for each pricing item in a row */
-    padding: 1rem; /* Adjust the padding as needed */
-    background-color: #fff; /* Background color for each pricing item */
-    border: 1px solid #e0e0e0; /* Border to separate pricing items */
-    margin: 1rem; /* Add margin around pricing items */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    flex: 1;
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    margin: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
+.pricing-item:hover{
+    background: var(--rose-gold);
+}
 .pricing-item h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #333;
-    margin-bottom: 1rem; /* Adjust the margin as needed */
+    margin-bottom: 1.5rem;
 }
 
 .pricing-item ul {
-    list-style-type: none; /* Remove list bullet points */
+    list-style-type: none;
+    padding: 0;
 }
 
 .pricing-item li {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #555;
-    margin-bottom: 0.5rem; /* Adjust the margin as needed */
+    margin-bottom: 1rem;
 }
 
-/* Add styles for hover effects or additional styling as desired */
 .pricing-item:hover {
-    transform: scale(1.05); /* Example scale effect on hover */
-    transition: transform 0.3s; /* Smooth transition effect on hover */
+    transform: translateY(-5px);
 }
-
 
 
 /* .subscription-form {
