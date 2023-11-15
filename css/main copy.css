@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Jost:wght@300;400&family=Potta+One&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Jost:wght@300;400&family=Potta+One&display=swap');
 
 :root{
     --soft-peach: #FFB6C1;
     --rich-earthy-gree: #556B2F;
     --hover: #625b5b;
     --light-cream: #FFFFF0;
-    /* --light-cream: #333333; */
+    --light-cream: #333333;
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     --rose-gold: #B76E79;
     --silver: #C0C0C0;
@@ -100,34 +100,29 @@ header{
 .header:hover::after{
     left: 100%;
 }
-
-
 header .logo {
     font-size:  2.25rem;
     margin: .5rem;
     font-weight: bolder;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     letter-spacing: 2px;
-    font-family: 'Dancing Script', sans-serif;
-    text-shadow: 0 2px 2px gray;
-    color: var(--light-cream);
-
+    font-family: 'Potta One', cursive;
+    text-shadow: 0 2px 6px gray;
+    color: white;
 }
 header .logo:hover{
-    font-size:  2.7rem;
+    font-size:  2.5rem;
 }
 
 .navbar a{
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: var(--light-cream);
     font-weight: 500;
     margin-left: 2.5rem;
-    font-family: 'Dancing Script', sans-serif;
-    text-shadow: 0 2px 2px gray;
 }
 .navbar a:hover{
     /* color: var(--soft-peach); */
-    font-size: 2.5rem;
+    font-size: 2.25rem;
 }
 #check{
     display: none;
@@ -173,7 +168,6 @@ header .logo:hover{
         box-shadow: var(--box-shadow) ;
         overflow: hidden;
         transition: .3s ease;
-        font-size: 1.5rem
     }
     #check:checked~.navbar{
         height: 17.7rem;
@@ -186,7 +180,6 @@ header .logo:hover{
         transform: translateY(-50px);
         opacity: 0;
         transition: .3s ease;
-        font-size: 1.5rem;
     }
     #check:checked~.navbar a{
         transform: translateY(0);
@@ -239,8 +232,6 @@ header .logo:hover{
     font-weight: 900;
     margin-left: 2rem;
     margin-top: 1rem; /* Add space between the lines of the h3 */
-    font-family: 'Dancing Script', sans-serif;
-    text-align: center;
 }
 
 
@@ -270,16 +261,8 @@ header .logo:hover{
 }
 
 .about-container h2 {
-    font-size: 5rem;
-    line-height: 1.1em;
-    font-weight: 800;
-    background-clip: border-box;
-    text-align: center;
-    /* margin-top: 35%; */
-    letter-spacing: 2px;
-    font-family: 'Dancing Script', sans-serif;
-    text-shadow: 0 2px 2px gray;
-    color: var(--rose-gold);
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    color: #333;
     margin-right: 4rem;
     margin-bottom: 1rem; /* Adjust the margin as needed */
 }
@@ -320,7 +303,7 @@ header .logo:hover{
 }
 
 .services-txt {
-    font-size: 4em;
+    font-size: 5em;
     line-height: .8em;
 }
 
@@ -331,10 +314,8 @@ header .logo:hover{
     font-weight: 800;
     background-clip: border-box;
     margin-top: 35%;
-    letter-spacing: 2px;
-    font-family: 'Dancing Script', sans-serif;
-    text-shadow: 0 2px 2px gray;
     color: var(--rose-gold);
+    outline: #625b5b;
 }
 
 .services-grid {
@@ -418,18 +399,10 @@ header .logo:hover{
 }
 
 #pricing h2{
-    /* font-size: 3.5rem;
-    font-weight: 600; */
+    font-size: 3rem;
+    font-weight: 600;
     margin-top: -2rem;
-    font-size: 4rem;
-    line-height: 1.1em;
-    font-weight: 800;
-    /* background-clip: border-box; */
-    /* margin-top: 35%; */
-    letter-spacing: 2px;
-    font-family: 'Dancing Script', sans-serif;
-    text-shadow: 0 2px 2px gray;
-    color: var(--rose-gold);
+    color: black;
 }
 .pricing-container {
     display: flex;
@@ -448,14 +421,11 @@ header .logo:hover{
 }
 
 .pricing-item:hover{
-    /* background: var(--rose-gold); */
+    background: var(--rose-gold);
 }
 .pricing-item h3 {
     font-size: 2rem;
-    letter-spacing: 2px;
-    /* font-family: 'Dancing Script', sans-serif; */
-    /* text-shadow: 0 2px 2px gray; */
-    color: #555;
+    color: #333;
     margin-bottom: 1.5rem;
 }
 
@@ -476,60 +446,64 @@ header .logo:hover{
 
 /* Footer  */
 
-footer {
-    color: var(--light-cream);
-    background: #555;
-    padding: 2rem 15vw;
-}
-.subscribe{
+.title{
+    text-align: center; 
+    margin: 10rem 0;
+    letter-spacing: 2px;
+    font-family: 'Potta One', cursive;
+    text-shadow: 0 5px 6px gray;
+ }
+ 
+ footer {
+     background: pink;
+     color: white;
+     padding: 2rem 16vw;
+ }
+ .newsletter{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-footer h2{
-    text-shadow: 0 2px 2px var(--rose-gold);
+.newsletter h2{
     display: flex;
     flex-direction: column;
-    /* padding: 10%; */
-    /* margin: 20%; */
-    font-size: 3rem;
-    font-weight: bold;
-    
 }
-
-.subscribe form{
+.newsletter span:nth-child(2){
+    font: 12px;
+    font-weight: 300;
+}
+.newsletter form {
     margin: 20px 0;
+    display: flex;
+    gap: 10px;
 }
-.subscribe form input{
+.newsletter form input{
     height: 40px;
     width: 17vw;
     padding: 0 15px;
     outline: none;
 }
-.subscribe form button{
+.newsletter form button{
     height: 40px;
-    width: auto;
-    color: var(--light-cream);
-    background: var(--rose-gold);
-    border: 1px solid gray;
-    padding: 1rem;
-    border-radius: 5%;
-    margin-right: 5rem;
-
+    width: 5rem;
+    color: white;
+    background: rgb(78, 29, 37);
+    border: none;
 }
-.subscribe form button:hover{
-    font-size: 1.5rem;
-}
-
-.media-icons{
-    display: flex;
-}
-.media-icons a{
+ 
+ .social-icons{
+     display: flex;
+ }
+ /* .social-icons i{
+     list-style: none;
+     margin: 0 12px;
+ } */
+ .social-icons li a{
     height: 40px;
     width: 40px;
-    margin: 0 4px;
+    margin: 0 8px;
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
@@ -537,68 +511,72 @@ footer h2{
     font-size: 17px;
     text-decoration: none;
     transition: all 0.4s ease;
-}
-.media-icons a:nth-child(1){
+    
+ }
+ .social-icons li a:nth-child(1){
     background: #4267b2;
 }
-.media-icons a:nth-child(1):hover{
+.social-icons li a:nth-child(1):hover{
     color: #4267b2;
     background: #fff;
 }
-.media-icons a:nth-child(2){
+.social-icons li a:nth-child(2){
     background: #0099ff;
 }
-.media-icons a:nth-child(2):hover{
+.social-icons li a:nth-child(2):hover{
     color: #0099ff;
     background: #fff;
 }
-.media-icons a:nth-child(3){
+.social-icons li a:nth-child(3){
     background: #1da1f2;
 }
-.media-icons a:nth-child(3):hover{
+.social-icons li a:nth-child(3):hover{
     color: #1da1f2;
     background: #fff;
 }
-.media-icons a:nth-child(4){
+.social-icons li a:nth-child(4){
     background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
 }
-.media-icons a:nth-child(4):hover{
+.social-icons li a:nth-child(4):hover{
     color: #e1306c;
     background: #fff;
 }
-hr{
-    background-color: gray;
-    border: 1px solid gray;
-    text-shadow: 0 2px 2px gray;
-    margin: 30px 0;
-}
 
-.main{ 
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 30px;
-}
 
-.links{
-    /* margin: 1px 0; */
-}
-.links h5{
-    font-size: 2rem;
-    color: #cd8590;
-    font-weight: bold;
-}
-.links ul{
-    margin: 10px 0;
-}
-.links li{
-    margin: 4px 0;
-}
-.links li a{
-    font-size: 1.2rem;
-    color: var(--light-cream);
-    transition: 0.3s ease;
-}
-.copyright{
-  margin: -1rem 0;  
-}
+ hr{
+     background-color: gray;
+     border: 1px solid gray;
+     margin: 30px 0;
+ }
+ 
+ .main{ 
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     padding: 0 30px;
+     
+ }
+ .footer-logo{
+     letter-spacing: 2px;
+     font-family: 'Potta One', cursive;
+     text-shadow: 0 2px 6px gray;
+ }
+ .links{
+     margin: 10px 0;
+ }
+ .links h6{
+     font-size: 14px;
+ }
+ .links ul{
+     margin: 10px 0;
+ }
+ .links li{
+     list-style: none;
+     margin: 4px 0;
+ }
+ .links li a{
+     font-size: 13px;
+     text-decoration: none;
+     color: gray;
+     transition: 0.3s ease;
+ }
