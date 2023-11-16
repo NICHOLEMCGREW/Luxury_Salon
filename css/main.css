@@ -580,14 +580,32 @@ hr{
     padding: 0 30px;
 }
 
-.links{
-    /* margin: 1px 0; */
-}
 .links h5{
     font-size: 2rem;
     color: #cd8590;
     font-weight: bold;
+    font-weight: 400;
+    margin-bottom: 10px;
+    position: relative;
 }
+
+.links h5:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: var(--light-cream);
+    transition: all .3s ease-in-out;
+}
+.links h5:hover:before{
+    width: 70%;
+    position: absolute;
+     border-radius: 2px;
+}
+ 
+  
 .links ul{
     margin: 10px 0;
 }
