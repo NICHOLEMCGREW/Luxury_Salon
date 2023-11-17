@@ -1,17 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Jost:wght@300;400&family=Potta+One&family=Tangerine:wght@400;700&display=swap');
 
 :root{
     --soft-peach: #FFB6C1;
-    --rich-earthy-gree: #556B2F;
     --hover: #625b5b;
     --light-cream: #FFFFF0;
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     --rose-gold: #B76E79;
-    --silver: #C0C0C0;
-    --lavender: #E6E6FA;
-    --off-white: #f2e2ce;
-    --border: .1rem solid #aaa;
-    --lilac: #C4C7F5;
 }
 
 *{
@@ -57,6 +51,10 @@ a {
     -o-transition: 0.5s ease-in-out;
 }
 
+section {
+    height: calc(100vh - 6rem); /* Adjust the value based on your header height */
+}
+
 /* header/nav  */
 header{
     padding: 0;
@@ -95,26 +93,32 @@ header{
 .header:hover::after{
     left: 100%;
 }
+
+
 header .logo {
     font-size:  2.25rem;
     margin: .5rem;
     font-weight: bolder;
+    letter-spacing: 2px;
+    font-family: 'Dancing Script', sans-serif;
+    text-shadow: 0 2px 2px gray;
     color: var(--light-cream);
-    text-transform: uppercase;
+
 }
 header .logo:hover{
-    font-size:  2.5rem;
+    font-size:  2.7rem;
 }
 
 .navbar a{
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: var(--light-cream);
     font-weight: 500;
     margin-left: 2.5rem;
+    font-family: 'Dancing Script', sans-serif;
+    text-shadow: 0 2px 2px gray;
 }
 .navbar a:hover{
-    /* color: var(--soft-peach); */
-    font-size: 2.25rem;
+    font-size: 2.5rem;
 }
 #check{
     display: none;
@@ -160,6 +164,7 @@ header .logo:hover{
         box-shadow: var(--box-shadow) ;
         overflow: hidden;
         transition: .3s ease;
+        font-size: 1.5rem
     }
     #check:checked~.navbar{
         height: 17.7rem;
@@ -172,6 +177,7 @@ header .logo:hover{
         transform: translateY(-50px);
         opacity: 0;
         transition: .3s ease;
+        font-size: 1.5rem;
     }
     #check:checked~.navbar a{
         transform: translateY(0);
@@ -180,7 +186,6 @@ header .logo:hover{
     }
 }
 
-/* Add this CSS to style the services page with a different look */
 #services {
     background-color: #f7f7f7;
     padding: 80px 0;
