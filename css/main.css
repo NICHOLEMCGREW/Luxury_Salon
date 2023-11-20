@@ -193,20 +193,15 @@ header .logo:hover{
 .home {
     min-height: 100vh;
     display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative;
     align-items: center;
     background: url('/imgs/bg/rosebg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
 }
 
-.home::before {
+/* .home::before {
     content: "";
     position: absolute;
     top: 0;
@@ -219,7 +214,7 @@ header .logo:hover{
     mix-blend-mode: multiply;
     opacity: 0.7;
     z-index: -1;
-}
+} */
 
 .home .content {
     max-width: 60rem;
@@ -234,35 +229,30 @@ header .logo:hover{
     color: var(--light-cream);
 }
 
-
-/* about  */
 .about {
     background-color: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-            max-height: 100vh;
-}
-
-.about-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 3rem;
+    margin-bottom: 1rem;
 }
 
 .about-img img {
-    max-width: 80%;
-    flex: 1 1 39rem;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+}
+
+.about-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 2rem;
+    text-align: center;
+    padding: 1rem;
+
 }
 
 .about-container h2 {
@@ -270,24 +260,35 @@ header .logo:hover{
     line-height: 1.1em;
     font-weight: 800;
     background-clip: border-box;
-    text-align: center;
-    /* margin-top: 35%; */
     letter-spacing: .2rem;
     font-family: 'Dancing Script', sans-serif;
     text-shadow: var(--text-shadow);
     color: var(--rose-gold);
-    margin-right: 4rem;
-    margin-bottom: 1rem; /* Adjust the margin as needed */
+    /* margin-bottom: 1rem; */
 }
 
 .about-container p {
     font-size: 1rem; 
     color: #444;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     line-height: 1.8;
 }
 
-/* services */
+/* Media Query for Small Devices (Phones) */
+@media (max-width: 576px) {
+    .about {
+        grid-template-columns: 1fr;
+        grid-column-gap: 0; /* No space between columns on smaller screens */
+    }
+
+    .about-container {
+        text-align: center;
+    }
+}
+
+
+
+/* Services Section */
 #services {
     background-color: #f7f7f7;
     text-align: center;
@@ -297,26 +298,24 @@ header .logo:hover{
 
 .services-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(3, 1fr minmax(25rem, 1fr));
     gap: 2rem;
+    justify-content: center;
 }
 
 .services-container h2 {
     font-size: 2.25rem;
     color: #333;
-    margin-top: -2.5rem;
+    /* margin-top: -2.5rem; */
     margin-bottom: 1rem;
 }
 
 .services-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     width: 100%;
-    max-width: 1200px; 
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .services-txt h2 {
@@ -332,40 +331,26 @@ header .logo:hover{
 }
 
 .services-grid {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     justify-items: center;
-    margin-top: -1rem;
+    /* margin-top: -1rem; */
     margin-right: 2rem;
 }
 
 .service-item {
     background-color: #fff;
     padding: .5rem;
-    -webkit-box-shadow: var(--box-shadow);
-            box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
     border-radius: 1rem;
     text-align: center;
-    -webkit-transition: -webkit-transform 0.2s;
-    transition: -webkit-transform 0.2s;
-    -o-transition: transform 0.2s;
     transition: transform 0.2s;
-    transition: transform 0.2s, -webkit-transform 0.2s;
-    width: 20rem; 
+    width: 20rem;
     height: 15rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; 
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .service-item h3 {
@@ -414,6 +399,46 @@ header .logo:hover{
         -ms-transform: scale(1.05);
             transform: scale(1.05);
 }
+
+@media (max-width: 991px) {
+    .services-container {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr, minmax(15rem, 1fr));
+        justify-content: center;
+        margin-top: -10rem;
+    }
+
+    .services-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .service-item h3 {
+        order: -1; /* Move h3 above .service-item */
+        font-size: 1rem;
+    }
+
+    .services-txt h2{
+        font-size: 4rem;
+        padding: 2rem;
+    }
+}
+
+/* pricing  */
 
 #pricing {
     background-color: #fff;
@@ -762,9 +787,9 @@ hr{
 /* Extra Small Devices (Phones) */
 @media (max-width: 576px) {
     .home .content h3 {
-        font-size: 2.5rem;
+        /* font-size: 3.5rem;
         letter-spacing: 0.1rem;
-        line-height: 3rem;
+        line-height: 3rem; */
     }
 }
 
@@ -783,3 +808,7 @@ hr{
 @media (min-width: 1200px) {
     /* Styles for extra large devices */
 }
+
+
+/* background image @media  */
+
