@@ -7,25 +7,24 @@
     <link rel="stylesheet" href="css/servives.css">
     <link rel="stylesheet" href="css/footer2.css">
     <script src="https://kit.fontawesome.com/f4e8681ba1.js" crossorigin="anonymous"></script>
-    <script src="main.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Rose Salon</title>
 
 <body>
-     <!-- Header/Nav -->
-<header class="header">
-    <a href="#home" class="logo"><i class="fa-solid fa-scissors"></i>Rose Salon</a>
-    
-    <input type="checkbox" id="check">
-    <label for="check" class="icons">
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-        <i class="fa-solid fa-x" id="close-icon"></i>
-    </label>
-    
+       <!-- header  -->
+       <header id="header" class="header">
+        <a href="#" class="logo"><i class="fa-solid fa-scissors"></i>Rose Salon</a>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <!-- <i class="fa-solid fa-x" id="close-icon"></i> -->
+        </div>
+
         <nav class="navbar">
-            <a href="/main.html#home" style="--i:0;">Home</a>
-            <a href="/main.html#about" style="--i:1;">About</a>
-            <a href="/main.html#services" style="--i:2;">Services</a>
-            <a href="/main.html#pricing" style="--i:3;">Pricing</a>
+            <a href="main.html#home" style="--i:0;">Home</a>
+            <a href="main.html#about" style="--i:1;">About</a>
+            <a href="main.html#services" style="--i:2;">Services</a>
+            <a href="main.html#pricing" style="--i:3;">Pricing</a>
             <a href="contact.html" style="--i:4;">Contact</a>
         </nav>
     </header>
@@ -110,15 +109,17 @@
     </div>
 </section>
 
-<!-- Footer -->
-<footer>
+
+
+ <!-- Footer -->
+ <footer>
     <h2>Subscribe for 10% Off!</h2>
     <div class="subscribe">
-        <form action="">
+        <form action="submit">
             <input type="email" placeholder="Enter your email">
             <button type="submit">Subscribe</button>
         </form>
-        <div class="media-icons">
+        <div class="social-icons">
             <a href="https://www.facebook.com/yourfacebookpage" id="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.messenger.com/t/yourmessengerpage" id="messenger" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
             <a href="https://www.twitter.com/yourtwitterpage" id="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -143,16 +144,16 @@
                 <li><i class="fa-solid fa-location-dot"></i> <a href="https://maps.app.goo.gl/j9qoh5QzQ8ZMk6HW6" target="_blank">Get Directions</a></li>
                 <li>1234 Salon Street</li>
                 <li>Asheville, NC 28801</li>
-                <span><i class="fa-solid fa-wheelchair-move"></i> Wheelchair Accessible</span>
+                <li><i class="fa-solid fa-wheelchair-move"></i> Wheelchair Accessible</li>
             </ul>
         </div>
         <div class="links">
             <h5><i class="fa-regular fa-clock"></i> Salon Hours</h5>
             <ul>
                 <li><a href="#">Monday - Thursday: 9:00 a.m. - 7:00 p.m.</a></li>
-            <li><a href="#">Friday: Appointment Only</a></li>
-            <li><a href="#">Saturday: 10:00 a.m. - 3:00 p.m.</a></li>
-            <li><a href="#">Sunday: Appointment Only</a></li>
+                <li><a href="#">Friday: Appointment Only</a></li>
+                <li><a href="#">Saturday: 10:00 a.m. - 3:00 p.m.</a></li>
+                <li><a href="#">Sunday: Appointment Only</a></li>
             </ul>
         </div>
     </div>

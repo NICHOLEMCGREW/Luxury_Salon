@@ -199,7 +199,6 @@ header .logo:hover{
     display: none;
 }
 
-/* Services  */
 
 /* Home  */
 .home{
@@ -514,6 +513,22 @@ header .logo:hover{
         margin: 0.5rem; /* Reduce margin on smaller screens */
     }
 }
+
+/* #book {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: transparent;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add styles to show the dropdown when the contact link is hovered or clicked */
+#contact-link:hover #book,
+#contact-link:focus-within #book {
+    display: block;
+} */
 
 
 /* Footer  */
