@@ -1,0 +1,145 @@
+Services Section
+#services {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 3rem 0;
+    
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-self: center;
+}
+
+.services-container h2 {
+    font-size: 2.25rem;
+    color: #333;
+    /* margin-top: -2.5rem; */
+    margin-bottom: 1rem;
+}
+
+.services-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-txt h2 {
+    font-size: 5rem;
+    line-height: 1.1em;
+    font-weight: 800;
+    background-clip: border-box;
+    margin-top: 35%;
+    letter-spacing: .2rem;
+    font-family: 'Dancing Script', sans-serif;
+    text-shadow: var(--text-shadow);
+    color: var(--rose-gold);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    /* margin-top: -1rem; */
+    margin-right: 2rem;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: .5rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 20rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    color: var(--light-cream);
+}
+
+.service-item.cut-style {
+    background-image: url('/imgs/salonServices/cut-style.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.service-item.color-highlight {
+    background-image: url('/imgs/salonServices/color-highlight.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.service-item.brows-lashes {
+    background-image: url('/imgs/salonServices/brows-lashes.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.service-item.face-skin {
+    background-image: url(/imgs/salonServices/facial.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+
+.service-item.makeup-beauty {
+    background-image: url('/imgs/salonServices/makeup-beauty.jpeg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.service-item.special-occasion {
+    background-image: url('/imgs/salonServices/special-occasion.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.service-item:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+}
+
+@media (max-width: 991px) {
+    .services-container {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    .services-container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin-top: -12rem;
+    }
+    
+    .services-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .service-item h3 {
+        order: -1; /* Move h3 above .service-item */
+        font-size: 1rem;
+    }
+
+    .services-txt h2{
+        font-size: 4rem;
+        padding: 2rem;
+    }
+}
