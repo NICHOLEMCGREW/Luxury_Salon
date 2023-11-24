@@ -22,23 +22,28 @@ var typed = new Typed('#home-title', {
   });
   
 
-//   document.addEventListener('DOMContentLoaded', function () {
-//     const contactLink = document.getElementById('contact-link');
-//     const contactForm = document.getElementById('book');
+// scroll-to-down 
+document.addEventListener('DOMContentLoaded', function () {
+  // Get all the links with the class "scroll-to-down"
+  const scrollDownLinks = document.querySelectorAll('.scroll-to-down');
 
-//     // Toggle the display of the contact form on click
-//     contactLink.addEventListener('click', function (event) {
-//         event.preventDefault();
-//         contactForm.style.display = (contactForm.style.display === 'block') ? 'none' : 'block';
-//     });
+  // Add click event listener to each link
+  scrollDownLinks.forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
 
-//     // Hide the contact form when clicking outside of it
-//     document.addEventListener('click', function (event) {
-//         const isClickInsideContactLink = contactLink.contains(event.target);
-//         const isClickInsideContactForm = contactForm.contains(event.target);
+      // Get the parent section of the clicked link
+      const parentSection = link.closest('section');
 
-//         if (!isClickInsideContactLink && !isClickInsideContactForm) {
-//             contactForm.style.display = 'none';
-//         }
-//     });
-// });
+      // Get the next section (assuming each section follows the previous one)
+      const targetSection = parentSection.nextElementSibling;
+
+      // Scroll smoothly to the target section
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});

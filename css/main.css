@@ -411,7 +411,6 @@ header .logo:hover{
     }
 }
 
-
 /* pricing  */
 
 .pricing {
@@ -514,23 +513,6 @@ header .logo:hover{
     }
 }
 
-/* #book {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: transparent;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Add styles to show the dropdown when the contact link is hovered or clicked */
-#contact-link:hover #book,
-#contact-link:focus-within #book {
-    display: block;
-} */
-
-
 /* Footer  */
 
 footer {
@@ -619,7 +601,7 @@ footer h2{
     transition: all 0.4s ease;
 }
 
-/* ... (Previous styles) */
+
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
@@ -751,6 +733,55 @@ hr{
     border-radius: .2rem;
 }
 
+/* BREAKPOINTS  */
+
+/* media queries */
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+    .header{
+        /* padding: 1.5rem 2rem; */
+    }
+    .header{
+        padding: 1.5rem 5%;
+    }
+}
+
+@media (max-width:768px) {
+    .header #menu-btn{
+        display: inline-block;
+    }
+    .header{
+        /* padding: 1.5rem 5%; */
+    }
+    .header .navbar{
+        position: absolute;
+        top: 99%;
+        left: 0; right: 0;
+        background: var(--rose-gold);
+        border-top: 0.2rem solid var(--light-cream);
+        border-bottom: 0.2rem solid var(--light-cream);
+        /* padding: 0.2rem; */
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 2.2rem 50%;
+    }
+}
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+}
 /* BREAKPOINTS  */
 
 /* media queries */
