@@ -247,7 +247,7 @@ header .logo:hover{
     }
 }
 
-.scroll-to-down {
+/* .scroll-to-down {
     width: 30px;
     height: 55px;
     display: grid;
@@ -264,7 +264,7 @@ header .logo:hover{
 .scroll-to-down .fa-arrow-down {
     color: var(--light-cream);
     animation: scrolltodown 2s ease infinite;
-}
+} */
 
 .about {
     background-color: #fff;

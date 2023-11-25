@@ -23,27 +23,27 @@ var typed = new Typed('#home-title', {
   
 
 // scroll-to-down 
-document.addEventListener('DOMContentLoaded', function () {
-  // Get all the links with the class "scroll-to-down"
-  const scrollDownLinks = document.querySelectorAll('.scroll-to-down');
+// document.addEventListener('DOMContentLoaded', function () {
+//   // Get all the links with the class "scroll-to-down"
+//   const scrollDownLinks = document.querySelectorAll('.scroll-to-down');
 
-  // Add click event listener to each link
-  scrollDownLinks.forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
+//   // Add click event listener to each link
+//   scrollDownLinks.forEach(function (link) {
+//     link.addEventListener('click', function (e) {
+//       e.preventDefault();
 
-      // Get the parent section of the clicked link
-      const parentSection = link.closest('section');
+//       // Get the parent section of the clicked link
+//       const parentSection = link.closest('section');
 
-      // Get the next section (assuming each section follows the previous one)
-      const targetSection = parentSection.nextElementSibling;
+//       // Get the next section (assuming each section follows the previous one)
+//       const targetSection = parentSection.nextElementSibling;
 
-      // Scroll smoothly to the target section
-      if (targetSection) {
-        targetSection.scrollIntoView({
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-});
+//       // Scroll smoothly to the target section
+//       if (targetSection) {
+//         targetSection.scrollIntoView({
+//           behavior: 'smooth'
+//         });
+//       }
+//     });
+//   });
+// });
