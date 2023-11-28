@@ -738,7 +738,7 @@ hr{
 /* media queries */
 @media (max-width: 991px) {
     html{
-        font-size: 55%;
+        /* font-size: 55%; */
     }
     .header{
         /* padding: 1.5rem 2rem; */
@@ -779,7 +779,7 @@ hr{
 
 @media (max-width:450px) {
     html{
-        font-size: 50%;
+        /* font-size: 50%; */
     }
 }
 /* BREAKPOINTS  */
@@ -787,7 +787,7 @@ hr{
 /* media queries */
 @media (max-width: 991px) {
     html{
-        font-size: 55%;
+        /* font-size: 55%; */
     }
     .header{
         /* padding: 1.5rem 2rem; */
@@ -828,6 +828,6 @@ hr{
 
 @media (max-width:450px) {
     html{
-        font-size: 50%;
+        /* font-size: 50%; */
     }
 }
