@@ -544,13 +544,16 @@ footer h2{
 
 @media (max-width:450px) {
     html{
-        /* font-size: 50%; */
+        font-size: 50%;
     }
     
 }
 
 /* Media Query for even smaller screens */
 @media (max-width: 576px) {
+    html {
+        font-size: 55%;
+    }
     .home {
         /* background: url(../imgs/bg/rosebg.jpeg); */
     background-size: cover;
@@ -587,6 +590,9 @@ footer h2{
 
 /* On larger screens, display 3 columns */
 @media (min-width: 768px) {
+    html {
+        font-size: 60%;
+    }
     .services-container {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -594,6 +600,9 @@ footer h2{
 
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
     .header #menu-btn{
         display: inline-block;
     }
