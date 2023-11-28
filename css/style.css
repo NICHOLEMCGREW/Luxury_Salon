@@ -546,10 +546,19 @@ footer h2{
     html{
         /* font-size: 50%; */
     }
+    
 }
 
 /* Media Query for even smaller screens */
 @media (max-width: 576px) {
+    .home {
+        background: url(../imgs/bg/rosebg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    background-position: 85%;
+    }
+    
     .about {
         grid-template-columns: 1fr;
         grid-column-gap: 0; /* No space between columns on smaller screens */
