@@ -18,7 +18,7 @@ var typed = new Typed('#home-title', {
         'Hello <br> Beautiful'
     ],
     typeSpeed: 80,
-    startDelay: 4000,
+    startDelay: 2000,
   });
   
 
