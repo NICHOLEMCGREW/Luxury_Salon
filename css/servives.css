@@ -120,7 +120,7 @@ header{
     z-index: 1000;
 }
 
-.header::before{
+/* .header::before{
     content: '';
     position: absolute;
     top: 0;
@@ -145,7 +145,7 @@ header{
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s;
-}
+} */
 .header:hover::after{
     left: 100%;
 }
