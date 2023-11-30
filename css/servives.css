@@ -265,6 +265,8 @@ footer {
     background: #444;
     padding: 2rem 15vw;
 }
+
+
 .subscribe{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -295,6 +297,13 @@ footer h2{
     
 }
 
+footer h2:hover{
+    font-size: 4rem;
+}
+
+.links li:hover{
+    font-size: 1.5rem; 
+}
 .subscribe {
     margin-bottom: -2rem;
 }
@@ -323,14 +332,19 @@ footer h2{
 }
 
 .subscribe form button:hover {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 /* Social Icons - Adjust for smaller screens */
 .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap; /* Allow icons to wrap to the next line on smaller screens */
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; /* Allow icons to wrap to the next line on smaller screens */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .social-icons a {
@@ -343,9 +357,10 @@ footer h2{
     color: #fff;
     font-size: 1.7rem;
     text-decoration: none;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
-
 /* ... (Previous styles) */
 
 /* Media Query for smaller screens */

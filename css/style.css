@@ -511,6 +511,8 @@ footer {
     background: #444;
     padding: 2rem 15vw;
 }
+
+
 .subscribe{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -541,6 +543,13 @@ footer h2{
     
 }
 
+footer h2:hover{
+    font-size: 4rem;
+}
+
+.links li:hover{
+    font-size: 1.5rem; 
+}
 .subscribe {
     margin-bottom: -2rem;
 }
@@ -569,7 +578,7 @@ footer h2{
 }
 
 .subscribe form button:hover {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 /* Social Icons - Adjust for smaller screens */
