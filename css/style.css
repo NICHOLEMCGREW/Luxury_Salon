@@ -626,8 +626,9 @@ footer h2:hover{
         /* background: url(../imgs/bg/rosebg.jpeg); */
     background-size: cover;
     background-repeat: no-repeat;
-    /* height: 100vh; */
     background-position: 85%;
+    max-height: 90vh;
+    margin-bottom: -5rem;
     }
     
     .about {
@@ -647,9 +648,17 @@ footer h2:hover{
 
     .about-container p{
         padding: 0 1rem;
+        font-size: 1.25rem;
+    }
+
+    .services {
+        margin-bottom: -3rem;
+    }
+    .services h2 {
+        font-size: 4rem; /* Adjust heading font size for smaller screens */
     }
     .pricing h2 {
-        font-size: 2.5rem; /* Adjust heading font size for smaller screens */
+        font-size: 4rem; /* Adjust heading font size for smaller screens */
     }
     
     .pricing-item {
@@ -663,7 +672,7 @@ footer h2:hover{
         font-size: 60%;
     }
     .services-container {
-        -ms-grid-columns: (1fr)[3];
+        -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -675,9 +684,6 @@ footer h2:hover{
     }
     .header #menu-btn{
         display: inline-block;
-    }
-    .header{
-        /* padding: 1.5rem 5%; */
     }
     .header .navbar{
         position: absolute;
@@ -700,7 +706,7 @@ footer h2:hover{
     .header .navbar a{
         display: block;
         font-size: 2rem;
-        margin: 2rem 43%;
+        margin: 2rem 45%;
     }
 
     .services-container {
