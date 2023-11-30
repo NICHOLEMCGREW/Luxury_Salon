@@ -544,11 +544,11 @@ footer h2{
 }
 
 footer h2:hover{
-    font-size: 4rem;
+    font-size: 3.25rem;
 }
 
 .links li:hover{
-    font-size: 1.5rem; 
+    /* font-size: 1.5rem;  */
 }
 .subscribe {
     margin-bottom: -2rem;
@@ -560,7 +560,7 @@ footer h2:hover{
 .subscribe form input {
     height: 4rem;
     width: 100%; /* Take up full width on smaller screens */
-    max-width: 17rem; /* Limit the maximum width */
+    max-width: 18rem; /* Limit the maximum width */
     padding: 0 1.5rem;
     outline: none;
 }
@@ -568,7 +568,7 @@ footer h2:hover{
 .subscribe form button {
     height: 4rem;
     width: 100%; /* Take up full width on smaller screens */
-    max-width: 17rem; /* Limit the maximum width */
+    max-width: 18rem; /* Limit the maximum width */
     color: var(--light-cream);
     background: var(--rose-gold);
     border: var(--border);
@@ -1052,18 +1052,32 @@ hr{
         font-size: 5rem;
     }
 
-    .links li a:hover {
-        font-size: 2rem;
-    }
-
     .links h5 {
         font-size: 4.5rem;
         margin-bottom: 2rem;
     }
-
-    .links h5:before {
-        width: 80%;
+    .links h5{
+        position: relative;
     }
+    
+    .links h5:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -.2rem;
+        width: 0;
+        height: .2rem;
+        background: var(--light-cream);
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+    .links h5:hover:before{
+        width: 65%;
+        position: absolute;
+         border-radius: .2rem;
+    }
+
 
     .links ul {
         /* margin: 2.5rem 0; */
