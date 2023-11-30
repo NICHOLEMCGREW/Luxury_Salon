@@ -575,3 +575,159 @@ hr{
         font-size: 50%;
     }
 }
+
+@media (min-width: 1920px) {
+    html {
+        font-size: 70%; /* Adjust the font size as needed */
+    }
+    header {
+        padding: 2rem 10%;
+    }
+    .header .logo {
+        font-size: 3.5rem;
+        margin-left: -10rem;
+    }
+    .navbar a{
+        font-size: 3rem;
+        padding: 2rem;
+    }
+    .header a:hover {
+        font-size: 4.5rem;
+    }
+    .navbar a:hover{
+        font-size: 4rem;
+    }
+    .contact-in{
+        height: 75rem;
+        width: 80%;
+    }
+.contact-form{
+    height: 100%;
+}
+    .contact-form h1{
+       font-size: 5.5rem;
+       padding-top: 1rem;
+       padding-bottom: 2.5rem;
+    }
+    .contact-form form{
+        /* font-size: 3.5rem; */
+        /* height: 20rem; */
+     }
+     .contact-form form input{
+        font-size: 3rem;
+        height: 5rem;
+     }
+     .contact-form-txt{
+        height: 50rem;
+     }
+     .contact-form-txtarea{
+        height: 35rem;
+        font-size: 3rem;
+     }
+     .contact-form-btn{
+        height: 50rem;
+        font-size: 3rem;
+        text-align: center;
+        padding-bottom: 5rem;
+     }
+    footer {
+        padding: 6rem 15vw; /* Increase padding for a more spacious look */
+        background-color: #444; /* Keep the background color */
+        color: var(--light-cream); /* Keep the text color */
+    }
+
+    .subscribe {
+        /* margin-top: 3rem; */
+        /* margin-bottom: 6rem; */
+        text-align: center;
+    }
+
+    .subscribe form {
+        max-width: 1200px; /* Increase the maximum width of the form */
+        margin: 3rem auto; /* Center the form with some top margin */
+    }
+    
+    .subscribe form input,
+    .subscribe form button {
+        /* padding: 0 7rem; */
+        width: 100%; /* Take up full width */
+        font-size: 2rem; /* Increase font size for better readability */
+        /* padding: 2rem 5rem; */
+        height: 6rem; /* Increase height for better visibility */
+    }
+    
+    
+    .subscribe form input::placeholder{
+        width: 200%;
+    }
+    .social-icons {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .social-icons a {
+        text-align: center;
+        padding-top: 1rem;
+        margin: 0 2rem; /* Increase spacing between social icons */
+        font-size: 3rem; /* Increase font size for better visibility */
+        height: 6.5rem; /* Increase height for better visibility */
+        width: 6.5rem; /* Increase width for better visibility */
+        align-items: center;
+    }
+
+    footer h2 {
+        font-size: 4.5rem;
+        font-weight: bold;
+        text-shadow: 0 .2rem .2rem var(--rose-gold);
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer h2:hover {
+        font-size: 5rem;
+    }
+
+    .links h5 {
+        font-size: 4.5rem;
+        margin-bottom: 2rem;
+    }
+    .links h5{
+        position: relative;
+    }
+    
+    .links h5:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -.2rem;
+        width: 0;
+        height: .2rem;
+        background: var(--light-cream);
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+    .links h5:hover:before{
+        width: 65%;
+        position: absolute;
+         border-radius: .2rem;
+    }
+
+
+    .links ul {
+        /* margin: 2.5rem 0; */
+    }
+
+    .links li,
+    .links li a {
+        margin: .5rem 0;
+        font-size: 1.8rem; /* Increase font size for better readability */
+        text-align: left;
+    }
+
+    .copyright {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 2rem; /* Increase font size for better readability */
+    }
+}
