@@ -885,3 +885,92 @@ hr{
         padding: 1.5rem 5%;
     }
 }
+
+/* Media query for larger desktop screens */
+@media (min-width: 1920px) {
+    html {
+        font-size: 70%; /* Adjust the font size as needed */
+    }
+    header {
+        padding: 2rem 10%;
+    }
+    .header a {
+        font-size: 3.5rem;
+    }
+    .navbar a{
+        font-size: 3rem;
+    }
+    .header a:hover {
+        font-size: 4.5rem;
+    }
+    .navbar a:hover{
+        font-size: 4rem;
+    }
+    .home {
+        background-size: cover;
+        background-position: center;
+        max-height: 100vh;
+        margin-bottom: -5rem;
+    }
+
+    .home .container span {
+        font-size: 9rem;
+        line-height: 1;
+    }
+
+    .home .container h3 {
+        margin-left: 25%;
+    }
+    .about {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 3rem;
+        height: auto; /* Adjust as needed */
+    }
+    .about .title{
+        font-size: 5rem;
+    }
+    .about p {
+        font-size: 2rem;
+    }
+    .services h2 {
+        margin-top: 0rem;
+        margin-bottom: 1.5rem;
+        font-size: 5rem;
+    }
+     /* Services section styles */
+     .services-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .service-item {
+        width: 100%; /* Ensure each item takes up the full width of its container */
+        max-width: none; /* Remove the maximum width restriction */
+        height: 200px; /* Adjust the height as needed */
+    }
+
+    .service-item img {
+        object-fit: cover;
+        border-radius: 8px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .service-title {
+        bottom: 5%; /* Adjust the distance from the bottom */
+        font-size: 1.8rem; /* Adjust the font size as needed */
+    }
+}
+
+    .pricing h2 {
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+        font-size: 5rem;
+    }
+    footer {
+        padding: 2rem 15vw;
+    }
+}
