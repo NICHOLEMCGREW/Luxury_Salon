@@ -208,9 +208,10 @@ header .logo:hover{
     text-align: center;
   }
   
-  .services-container h2 {
+  .services h2 {
     margin-top: -2.5rem;
-    font-size: 3.5rem;
+    text-align: center;
+    font-size: 4rem;
     line-height: 1.1em;
     font-weight: 800;
     letter-spacing: .2rem;
@@ -221,7 +222,7 @@ header .logo:hover{
   }
   
   .services-grid {
-    display: flex;
+      display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
@@ -542,3 +543,208 @@ hr{
         font-size: 50%;
     }
 }
+
+/* Media query for larger desktop screens */
+@media (min-width: 1920px) {
+    html {
+        font-size: 70%; /* Adjust the font size as needed */
+    }
+    header {
+        padding: 2rem 10%;
+    }
+    .header .logo {
+        font-size: 3.5rem;
+        margin-left: -10rem;
+    }
+    .navbar a{
+        font-size: 3rem;
+        padding: 2rem;
+    }
+    .header a:hover {
+        font-size: 4.5rem;
+    }
+    .navbar a:hover{
+        font-size: 4rem;
+    }
+
+    #services {
+        background-color: #f7f7f7;
+    }
+    
+    .services h2 {
+        margin-top: -2.5rem;
+        text-align: center;
+        font-size: 6rem;
+        line-height: 1.1em;
+        font-weight: 800;
+        letter-spacing: 0.2rem;
+        font-family: 'Dancing Script', sans-serif;
+        text-shadow: var(--text-shadow);
+        color: var(--rose-gold);
+        padding-bottom: 2.5rem;
+    }
+    
+    .services-container {
+        text-align: center;
+    }
+    
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(3, auto); 
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        /* gap: 1rem; */
+    }
+    
+    .service-item {
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        text-align: center;
+        justify-content: center;
+
+        align-items: center;
+        gap: 2rem;
+        width: 90%;
+        height: 100%;
+        margin: 1.5rem; 
+        transition: transform 0.3s;
+    }
+    
+    .service-item h3 {
+        font-size: 4rem; /* Increased font size using rems */
+        color: #333;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .service-item p {
+        font-size: 2rem; /* Increased font size using rems */
+        color: #585555;
+        padding: 2rem;
+        line-height: 1.5;
+    }
+
+    .service-item li {
+        font-size: 2rem; /* Increased font size using rems */
+        color: black;
+        line-height: 2;
+    }
+    
+    .service-item:hover {
+        transform: scale(1.05);
+    }
+    
+    .service-item img {
+        width: 15%; /* Adjusted image width for smaller size */
+        height: auto;
+        margin-bottom: 1rem; /* Added margin for spacing */
+    }
+    
+    
+    footer {
+        padding: 6rem 15vw; /* Increase padding for a more spacious look */
+        background-color: #444; /* Keep the background color */
+        color: var(--light-cream); /* Keep the text color */
+    }
+
+    .subscribe {
+        /* margin-top: 3rem; */
+        /* margin-bottom: 6rem; */
+        text-align: center;
+    }
+
+    .subscribe form {
+        max-width: 1200px; /* Increase the maximum width of the form */
+        margin: 3rem auto; /* Center the form with some top margin */
+    }
+    
+    .subscribe form input,
+    .subscribe form button {
+        /* padding: 0 7rem; */
+        width: 100%; /* Take up full width */
+        font-size: 2rem; /* Increase font size for better readability */
+        /* padding: 2rem 5rem; */
+        height: 6rem; /* Increase height for better visibility */
+    }
+    
+    
+    .subscribe form input::placeholder{
+        width: 200%;
+    }
+    .social-icons {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .social-icons a {
+        text-align: center;
+        padding-top: 1rem;
+        margin: 0 2rem; /* Increase spacing between social icons */
+        font-size: 3rem; /* Increase font size for better visibility */
+        height: 6.5rem; /* Increase height for better visibility */
+        width: 6.5rem; /* Increase width for better visibility */
+        align-items: center;
+    }
+
+    footer h2 {
+        font-size: 4.5rem;
+        font-weight: bold;
+        text-shadow: 0 .2rem .2rem var(--rose-gold);
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer h2:hover {
+        font-size: 5rem;
+    }
+
+    .links h5 {
+        font-size: 4.5rem;
+        margin-bottom: 2rem;
+    }
+    .links h5{
+        position: relative;
+    }
+    
+    .links h5:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -.2rem;
+        width: 0;
+        height: .2rem;
+        background: var(--light-cream);
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+    .links h5:hover:before{
+        width: 65%;
+        position: absolute;
+         border-radius: .2rem;
+    }
+
+
+    .links ul {
+        /* margin: 2.5rem 0; */
+    }
+
+    .links li,
+    .links li a {
+        margin: .5rem 0;
+        font-size: 1.8rem; /* Increase font size for better readability */
+        text-align: left;
+    }
+
+    .copyright {
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 2rem; /* Increase font size for better readability */
+    }
+}
+
+
