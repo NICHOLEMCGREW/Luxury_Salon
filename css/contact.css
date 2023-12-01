@@ -329,9 +329,9 @@ footer h2{
     
 }
 
-footer h2:hover{
+/* footer h2:hover{
     font-size: 4rem;
-}
+} */
 
 .links li:hover{
     font-size: 1.5rem; 
@@ -683,9 +683,9 @@ hr{
         flex-direction: column;
     }
 
-    footer h2:hover {
+    /* footer h2:hover {
         font-size: 5rem;
-    }
+    } */
 
     .links h5 {
         font-size: 4.5rem;
