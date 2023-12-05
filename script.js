@@ -21,6 +21,12 @@ var typed = new Typed('#home-title', {
     startDelay: 2000,
   });
   
+  // Change the title of the tab dynamically
+//   document.title = "Rose Salon";
+
+  
+//   var tabTitleElement = document.querySelector("title");
+//   tabTitleElement.id = "tabTitle";
 
 // scroll-to-down 
 // document.addEventListener('DOMContentLoaded', function () {
