@@ -709,6 +709,9 @@ footer h2:hover{
         margin: 2rem 45%;
     }
 
+    .services h2 {
+        font-size: 5rem;
+    }
     .services-container {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -731,6 +734,13 @@ footer h2:hover{
         -ms-grid-column: 1;
     }
 
+    .service-item {
+        height: 250px;
+    }
+
+    .pricing h2 {
+        font-size: 5rem;
+    }
     .pricing-container {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -743,7 +753,15 @@ footer h2:hover{
         -webkit-box-flex: 1;
             -ms-flex: 1;
                 flex: 1;
-        max-width: 100%; /* Take up full width on smaller screens */
+        width: 350px; /* Take up full width on smaller screens */
+    }
+    
+    .pricing-item h3 {
+        font-size: 2.5rem;
+    }
+
+    .pricing-item li {
+        font-size: 1.75rem;
     }
     .subscribe {
         margin-bottom: 0;
@@ -968,23 +986,24 @@ hr{
     }
 
     .pricing h2 {
-        margin-top: 0rem;
+        margin-top: 1rem;
         margin-bottom: 1.5rem;
         font-size: 5rem;
     }
     
-     .pricing-container {
-        /* display: grid; */
-        /* grid-template-columns: repeat(3, 1fr); */
-        gap: 2rem;
-        margin: 0 auto;
-        max-width: 1200px;
+    .pricing-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        grid-template-rows: repeat(2, 1fr); /* 2 rows */
+        gap: 10px; /* Adjust the gap between items */
+        margin-bottom: 2.5rem;
     }
 
     .pricing-item {
-        width: 100%; /* Ensure each item takes up the full width of its container */
-        max-width: none; /* Remove the maximum width restriction */
-        height: 100%; /* Adjust the height as needed */
+        width: 100%;
+        max-width: none;
+        height: 300px; /* Adjust the height as needed */
+        box-sizing: border-box;
     }
 
     .pricing-item h3 {
