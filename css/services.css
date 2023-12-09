@@ -205,6 +205,10 @@ header .logo:hover{
   }
   
   .services-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     text-align: center;
   }
   
@@ -231,10 +235,14 @@ header .logo:hover{
   .service-item {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 4px var(--rose-gold); */
     padding: 20px;
     text-align: center;
     width: 300px;
+    /* height: 300px; */
     transition: transform 0.3s;
+    line-height: 1.5;
+    border-radius: 5px;
   }
   
   .service-item h3 {
@@ -245,8 +253,19 @@ header .logo:hover{
   }
   
   .service-item p {
-    font-size: 1rem;
-    color: #777;
+    font-size: 1.1rem;
+    color: black;
+    /* font-weight: bold; */
+    padding-bottom: 1rem;
+    box-shadow: 0 2px 4px var(--rose-gold);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+
+   li  {
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    font-size: 1.2rem;
   }
   
   .service-item:hover {
@@ -366,6 +385,14 @@ footer h2:hover{
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
+    .services-item {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        width: 400px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
     .subscribe {
         margin-bottom: 0;
     }
@@ -507,6 +534,30 @@ hr{
     .header{
         padding: 1.5rem 5%;
     }
+    a.logo {
+        font-size: 3rem;
+    }
+   
+    .services h2 {
+        font-size: 3.5rem;
+    }
+    .service-item h3 {
+        font-size: 2.5rem;
+        padding-bottom: .5rem;
+    }
+    .service-item p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+
+    }
+    .service-item li {
+        font-size: 1.5rem;
+        line-height: 2;
+    }
+    .service-item {
+        /* width: 100%;
+        height: 100%; */
+    }
 }
 
 @media (max-width:768px) {
@@ -533,14 +584,31 @@ hr{
 
     .header .navbar a{
         display: block;
-        font-size: 2rem;
-        margin: 2.2rem 50%;
+        font-size: 3rem;
+        margin: 2.5rem 45%;
     }
+}
+
+@media (max-width: 768px) {
+    .services-item {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        width: 400px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+}
+}
+
+@media (max-width: 576px) {
+    .pricing-item {
+        max-width: calc(100% - 2rem);
+}
 }
 
 @media (max-width:450px) {
     html{
-        font-size: 50%;
+        font-size: 70%;
     }
 }
 
@@ -585,6 +653,7 @@ hr{
     }
     
     .services-container {
+        
         text-align: center;
     }
     
@@ -595,7 +664,7 @@ hr{
         justify-content: center;
         align-items: center;
         text-align: center;
-
+        
         /* gap: 1rem; */
     }
     
@@ -608,10 +677,14 @@ hr{
 
         align-items: center;
         gap: 2rem;
-        width: 90%;
+        /* width: 90%; */
         height: 100%;
         margin: 1.5rem; 
         transition: transform 0.3s;
+            width: 150%;
+            /* max-width: none; */
+            /* height: 300px; Adjust the height as needed */
+            box-sizing: border-box;
     }
     
     .service-item h3 {
@@ -643,6 +716,8 @@ hr{
         height: auto;
         margin-bottom: 1rem; /* Added margin for spacing */
     }
+
+    
     
     
     footer {
