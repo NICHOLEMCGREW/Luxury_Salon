@@ -655,6 +655,9 @@ footer h2:hover{
     .services h2 {
         font-size: 4rem; /* Adjust heading font size for smaller screens */
     }
+    .service-title {
+        margin-bottom: 2.5rem;
+    }
     .pricing h2 {
         font-size: 4rem; /* Adjust heading font size for smaller screens */
     }
