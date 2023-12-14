@@ -164,12 +164,13 @@ header .logo {
     font-size:  2.5rem;
     font-weight: bolder;
     color: var(--light-cream);
+    text-shadow: var(--text-shadow);
     letter-spacing: .1rem;
     font-family: 'Dancing Script', sans-serif;
-    text-shadow: var(--text-shadow);
 }
 header .logo:hover{
-    font-size:  2.7rem;
+    /* color: white; */
+    /* text-shadow: 0 .5rem .5rem gray; */
 }
 
 .navbar a{
@@ -183,7 +184,8 @@ header .logo:hover{
     
 }
 .navbar a:hover{
-    font-size: 2.5rem;
+    /* color: rgb(165, 157, 157); */
+    
 }
 
 
