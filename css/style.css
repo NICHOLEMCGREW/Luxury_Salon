@@ -212,7 +212,7 @@ header .logo:hover{
 
 /* Home  */
 .home{
-    /* min-height: 90vh; */
+    min-height: 90vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
