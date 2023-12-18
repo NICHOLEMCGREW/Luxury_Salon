@@ -212,7 +212,7 @@ header .logo:hover{
 
 /* Home  */
 .home{
-    min-height: 100vh;
+    /* min-height: 90vh; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -961,7 +961,7 @@ hr{
         padding: 2rem;
     }
     .header a:hover {
-        font-size: 4.5rem;
+        /* font-size: 4.5rem; */
     }
     .navbar a:hover{
         font-size: 4rem;
@@ -969,7 +969,7 @@ hr{
     .home {
         background-size: cover;
         background-position: center;
-        max-height: 100vh;
+        max-height: 100%;
         margin-bottom: -5rem;
     }
 
