@@ -164,13 +164,12 @@ header .logo {
     font-size:  2.5rem;
     font-weight: bolder;
     color: var(--light-cream);
-    text-shadow: var(--text-shadow);
     letter-spacing: .1rem;
     font-family: 'Dancing Script', sans-serif;
+    text-shadow: var(--text-shadow);
 }
 header .logo:hover{
-    /* color: white; */
-    /* text-shadow: 0 .5rem .5rem gray; */
+    font-size:  2.7rem;
 }
 
 .navbar a{
@@ -184,8 +183,7 @@ header .logo:hover{
     
 }
 .navbar a:hover{
-    /* color: rgb(165, 157, 157); */
-    
+    font-size: 2.5rem;
 }
 
 
@@ -214,7 +212,7 @@ header .logo:hover{
 
 /* Home  */
 .home{
-    min-height: 95vh;
+    min-height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -311,11 +309,11 @@ header .logo:hover{
     -ms-grid-columns: 1fr 3rem 1fr;
     grid-template-columns: 1fr 1fr;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     grid-column-gap: 3rem;
     /* height: 100vh; */
     margin-bottom: 1.2rem;
@@ -325,6 +323,7 @@ header .logo:hover{
     max-width: 100%;
     margin-bottom: 1rem;
     padding: 1rem;
+
 }
 
 .about-container {
@@ -335,6 +334,7 @@ header .logo:hover{
     grid-gap: 2rem;
     text-align: center;
     padding: .5rem;
+
 }
 
 .about-container h2 {
@@ -358,10 +358,10 @@ header .logo:hover{
 
 
 /* Services */
-/* Services */
 .services {
     background-color: #f7f7f7;
     text-align: center;
+    
 }
 
 .services h2 {
@@ -381,57 +381,68 @@ header .logo:hover{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 2rem;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
-
 
 .service-item {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     height: 145px; 
+    /* width: 225px; */
     width: 100%;
-    max-width: 100%;
+    max-width: 100%; /* Ensure the image doesn't overflow */
 }
 
 .service-item img {
     width: 100%;
     height: 100%;
     display: block;
-    object-fit: cover; 
+    -o-object-fit: cover;
+       object-fit: cover; 
     border-radius: 8px;
 }
 
 .service-title {
     position: absolute;
-    bottom: -2%;
+    bottom: 3%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     font-weight: bold;
     text-align: center;
     font-size: 1.5rem;
     color: var(--light-cream);
-    width: 100%;
 }
 
 .service:hover {
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 }
 
 
-/* Pricing Section */
+/* pricing  */
+
 .pricing {
     background-color: #fff;
     padding: 2rem 2rem;
     text-align: center;
-    width: 100%;
+    /* max-height: 100vh;  */
+    max-width: 100vw;
 }
 
-.pricing h2 {
+.pricing h2{
+    /* margin-top: -1.5rem; */
     font-size: 3.5rem;
+    /* line-height: 1.1em; */
     font-weight: 800;
     letter-spacing: .2rem;
     font-family: 'Dancing Script', sans-serif;
@@ -439,22 +450,32 @@ header .logo:hover{
     color: var(--rose-gold);
     padding-bottom: 1rem;
 }
-
 .pricing-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    justify-content: space-around;
-    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .pricing-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     padding: 1rem;
     background-color: #fff;
     border: var(--border);
-    box-shadow: var(--box-shadow);
+    margin: 1rem;
+    -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: transform 0.3s;
     transition: transform 0.3s;
-    height: 165px;
+    transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .pricing-item h3 {
@@ -476,16 +497,10 @@ header .logo:hover{
 }
 
 .pricing-item:hover {
-    transform: translateY(-0.5rem);
+    -webkit-transform: translateY(-0.5rem);
+        -ms-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
 }
-
-@media (max-width: 767px) {
-    /* Adjust styles for smaller screens (e.g., iPad) */
-    .pricing-container {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 
 
@@ -642,9 +657,6 @@ footer h2:hover{
     .services h2 {
         font-size: 4rem; /* Adjust heading font size for smaller screens */
     }
-    .service-title {
-        margin-bottom: 2.5rem;
-    }
     .pricing h2 {
         font-size: 4rem; /* Adjust heading font size for smaller screens */
     }
@@ -662,9 +674,6 @@ footer h2:hover{
     .services-container {
         -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: repeat(3, 1fr);
-    }
-    .pricing-item {
-        height: auto;
     }
 }
 
@@ -700,40 +709,6 @@ footer h2:hover{
         margin: 2rem 45%;
     }
 
-    .home {
-        /* background: url(../imgs/bg/rosebg.jpeg); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 85%;
-    max-height: 90vh;
-    margin-bottom: -5rem;
-    }
-
-    .about {
-        grid-template-columns: 1fr; /* Change to a single column layout */
-        grid-column-gap: 0; /* Remove column gap */
-    }
-
-    .about-container {
-        text-align: left; /* Align text to the left on smaller screens */
-    }
-
-    .about h2 {
-        font-size: 5rem;
-        text-align: center;
-    }
-    .about-container p {
-        /* width: 100%; */
-        font-size: 1.5rem;
-        text-align: center;
-        /* margin: 0; */
-    }
-
-   
-
-    .services h2 {
-        font-size: 5rem;
-    }
     .services-container {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -756,17 +731,6 @@ footer h2:hover{
         -ms-grid-column: 1;
     }
 
-    .service-item {
-        height: 250px;
-    }
-
-    .service-item div{
-        font-size: 2rem;
-    }
-
-    .pricing h2 {
-        font-size: 5rem;
-    }
     .pricing-container {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -779,18 +743,7 @@ footer h2:hover{
         -webkit-box-flex: 1;
             -ms-flex: 1;
                 flex: 1;
-        width: auto; /* Take up full width on smaller screens */
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        height: auto;
-    }
-    
-    .pricing-item h3 {
-        font-size: 2.75rem;
-    }
-
-    .pricing-item li {
-        font-size: 1.9rem;
+        max-width: 100%; /* Take up full width on smaller screens */
     }
     .subscribe {
         margin-bottom: 0;
@@ -921,43 +874,18 @@ hr{
 }
 
 
+
 @media (max-width: 991px) {
-    /* html{
-        font-size: 45%;
+    html{
+        /* font-size: 55%; */
     }
-    body {
-        font-size: 50%;
-    } */
     .header{
         /* padding: 1.5rem 2rem; */
     }
     .header{
-        /* padding: 1.5rem 5%; */
+        padding: 1.5rem 5%;
     }
 }
-
-/* @media (max-width: 1024px) {
-    html {
-        font-size: 50%;
-    }
-    .services-container {
-        grid-template-columns: repeat(1, 1fr);
-      }
-    .pricing-container {
-      grid-template-columns: repeat(1, 1fr);
-    }
-    .service-item {
-        width: auto;
-        height: auto;
-    } */
-
-    /* .pricing-item {
-        width: auto;
-        height: auto;
-    }
-  } */
-  
-
 
 /* Media query for larger desktop screens */
 @media (min-width: 1920px) {
@@ -976,7 +904,7 @@ hr{
         padding: 2rem;
     }
     .header a:hover {
-        /* font-size: 4.5rem; */
+        font-size: 4.5rem;
     }
     .navbar a:hover{
         font-size: 4rem;
@@ -984,7 +912,7 @@ hr{
     .home {
         background-size: cover;
         background-position: center;
-        max-height: 100%;
+        max-height: 100vh;
         margin-bottom: -5rem;
     }
 
@@ -1040,24 +968,23 @@ hr{
     }
 
     .pricing h2 {
-        margin-top: 1rem;
+        margin-top: 0rem;
         margin-bottom: 1.5rem;
         font-size: 5rem;
     }
     
-    .pricing-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns */
-        grid-template-rows: repeat(2, 1fr); /* 2 rows */
-        gap: 10px; /* Adjust the gap between items */
-        margin-bottom: 2.5rem;
+     .pricing-container {
+        /* display: grid; */
+        /* grid-template-columns: repeat(3, 1fr); */
+        gap: 2rem;
+        margin: 0 auto;
+        max-width: 1200px;
     }
 
     .pricing-item {
-        width: 100%;
-        max-width: none;
-        height: 300px; /* Adjust the height as needed */
-        box-sizing: border-box;
+        width: 100%; /* Ensure each item takes up the full width of its container */
+        max-width: none; /* Remove the maximum width restriction */
+        height: 100%; /* Adjust the height as needed */
     }
 
     .pricing-item h3 {
@@ -1169,4 +1096,3 @@ hr{
         font-size: 2rem; /* Increase font size for better readability */
     }
 }
-
