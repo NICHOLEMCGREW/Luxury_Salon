@@ -65,12 +65,6 @@
     -o-transition: all .2s linear;
   }
 
-/* body{
-    min-height: 100vh;
-} */
-
-
-/* HTML and Body */
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -110,7 +104,7 @@ section {
 
 /* header/nav  */
 header{
-    padding: 2rem 5%;
+    padding: 1.5rem 5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -161,7 +155,7 @@ header{
 }
 
 header .logo {
-    font-size:  2.5rem;
+    font-size:  2rem;
     font-weight: bolder;
     color: var(--light-cream);
     text-shadow: var(--text-shadow);
@@ -605,7 +599,7 @@ footer h2:hover{
 /* Media Query for even smaller screens */
 @media (max-width: 576px) {
     html {
-        font-size: 55%;
+        font-size: 65%;
     }
     .home {
         /* background: url(../imgs/bg/rosebg.jpeg); */
@@ -613,7 +607,7 @@ footer h2:hover{
     background-repeat: no-repeat;
     background-position: 85%;
     max-height: 90vh;
-    margin-bottom: -5rem;
+    /* margin-bottom: -5rem; */
     }
     
     .about {
@@ -623,7 +617,7 @@ footer h2:hover{
     }
     
     .about img{
-        margin-top: -3rem;
+        /* margin-top: -3rem; */
     }
     
     .about-container {
@@ -631,16 +625,20 @@ footer h2:hover{
         margin-bottom: -3rem;
     }
 
+    .about-container .title {
+        font-size: 4.5rem;
+    }
+
     .about-container p{
         padding: 0 1rem;
-        font-size: 1.25rem;
+        font-size: 1.8rem;
     }
 
     .services {
         margin-bottom: -3rem;
     }
     .services h2 {
-        font-size: 4rem; /* Adjust heading font size for smaller screens */
+        font-size: 4.5rem; /* Adjust heading font size for smaller screens */
     }
     .service-title {
         margin-bottom: 2.5rem;
@@ -656,9 +654,6 @@ footer h2:hover{
 
 /* On larger screens, display 3 columns */
 @media (min-width: 768px) {
-    html {
-        font-size: 60%;
-    }
     .services-container {
         -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: repeat(3, 1fr);
@@ -670,9 +665,9 @@ footer h2:hover{
 
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
-    html {
+    /* html {
         font-size: 65%;
-    }
+    } */
     .header #menu-btn{
         display: inline-block;
     }
@@ -696,8 +691,9 @@ footer h2:hover{
     
     .header .navbar a{
         display: block;
-        font-size: 2rem;
         margin: 2rem 45%;
+        text-align: center;
+        font-size: 2rem;
     }
 
     .home {
@@ -709,6 +705,7 @@ footer h2:hover{
     margin-bottom: -5rem;
     }
 
+
     .about {
         grid-template-columns: 1fr; /* Change to a single column layout */
         grid-column-gap: 0; /* Remove column gap */
@@ -719,26 +716,26 @@ footer h2:hover{
     }
 
     .about h2 {
-        font-size: 5rem;
+        font-size: 3rem;
         text-align: center;
     }
     .about-container p {
         /* width: 100%; */
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         text-align: center;
         /* margin: 0; */
     }
 
-   
-
     .services h2 {
-        font-size: 5rem;
+        font-size: 3rem;
     }
     .services-container {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: repeat(3, minmax(0, 1fr));
+        /* -ms-grid-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(2, 1fr);
     }
 
     .services-container > *:nth-child(1) {
@@ -757,15 +754,16 @@ footer h2:hover{
     }
 
     .service-item {
-        height: 250px;
+        height: auto;
+        width: auto;
     }
 
     .service-item div{
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     .pricing h2 {
-        font-size: 5rem;
+        font-size: 3rem;
     }
     .pricing-container {
         -webkit-box-orient: vertical;
@@ -773,6 +771,7 @@ footer h2:hover{
             -ms-flex-direction: column;
                 flex-direction: column;
         text-align: center;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .pricing-item {
@@ -780,17 +779,17 @@ footer h2:hover{
             -ms-flex: 1;
                 flex: 1;
         width: auto; /* Take up full width on smaller screens */
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        height: auto;
+        /* padding-top: 2rem;
+        padding-bottom: 2rem; */
+        height: 170px;
     }
     
     .pricing-item h3 {
-        font-size: 2.75rem;
+        font-size: 2rem;
     }
 
     .pricing-item li {
-        font-size: 1.9rem;
+        font-size: 1.2rem;
     }
     .subscribe {
         margin-bottom: 0;
@@ -878,7 +877,6 @@ hr{
      border-radius: .2rem;
 }
  
-  
 .links ul{
     margin: 1rem 0;
 }
@@ -922,251 +920,15 @@ hr{
 
 
 @media (max-width: 991px) {
-    /* html{
-        font-size: 45%;
+    html{
+        font-size: 55%;
     }
-    body {
-        font-size: 50%;
-    } */
-    .header{
-        /* padding: 1.5rem 2rem; */
+
+    .header .navbar a{
+        font-size: 1.7rem;
     }
-    .header{
-        /* padding: 1.5rem 5%; */
+
+    section{
+        padding: 3rem 2rem;
     }
 }
-
-/* @media (max-width: 1024px) {
-    html {
-        font-size: 50%;
-    }
-    .services-container {
-        grid-template-columns: repeat(1, 1fr);
-      }
-    .pricing-container {
-      grid-template-columns: repeat(1, 1fr);
-    }
-    .service-item {
-        width: auto;
-        height: auto;
-    } */
-
-    /* .pricing-item {
-        width: auto;
-        height: auto;
-    }
-  } */
-  
-
-
-/* Media query for larger desktop screens */
-@media (min-width: 1920px) {
-    html {
-        font-size: 70%; /* Adjust the font size as needed */
-    }
-    header {
-        padding: 2rem 10%;
-    }
-    .header .logo {
-        font-size: 3.5rem;
-        margin-left: -10rem;
-    }
-    .navbar a{
-        font-size: 3rem;
-        padding: 2rem;
-    }
-    .header a:hover {
-        /* font-size: 4.5rem; */
-    }
-    .navbar a:hover{
-        font-size: 4rem;
-    }
-    .home {
-        background-size: cover;
-        background-position: center;
-        max-height: 100%;
-        margin-bottom: -5rem;
-    }
-
-    .home .container span {
-        font-size: 9rem;
-        line-height: 1;
-    }
-
-    .home .container h3 {
-        margin-left: 25%;
-    }
-    .about {
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 3rem;
-        height: auto; /* Adjust as needed */
-    }
-    .about .title{
-        font-size: 5rem;
-    }
-    .about p {
-        font-size: 2rem;
-    }
-    .services h2 {
-        margin-top: 0rem;
-        margin-bottom: 1.5rem;
-        font-size: 5rem;
-    }
-     /* Services section styles */
-     .services-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2.5rem;
-        margin: 0 auto;
-        max-width: 1200px;
-    }
-
-    .service-item {
-        width: 100%; /* Ensure each item takes up the full width of its container */
-        max-width: none; /* Remove the maximum width restriction */
-        height: 100%; /* Adjust the height as needed */
-    }
-
-    .service-item img {
-        object-fit: cover;
-        border-radius: 8px;
-        height: 100%;
-        width: 110%;
-    }
-
-    .service-title {
-        bottom: 5%; /* Adjust the distance from the bottom */
-        font-size: 1.8rem; /* Adjust the font size as needed */
-    }
-
-    .pricing h2 {
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
-        font-size: 5rem;
-    }
-    
-    .pricing-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns */
-        grid-template-rows: repeat(2, 1fr); /* 2 rows */
-        gap: 10px; /* Adjust the gap between items */
-        margin-bottom: 2.5rem;
-    }
-
-    .pricing-item {
-        width: 100%;
-        max-width: none;
-        height: 300px; /* Adjust the height as needed */
-        box-sizing: border-box;
-    }
-
-    .pricing-item h3 {
-        font-size: 3rem;
-    }
-
-    .pricing-item li {
-        font-size: 2.5rem;
-    }
-
-    footer {
-        padding: 6rem 15vw; /* Increase padding for a more spacious look */
-        background-color: #444; /* Keep the background color */
-        color: var(--light-cream); /* Keep the text color */
-    }
-
-    .subscribe {
-        /* margin-top: 3rem; */
-        /* margin-bottom: 6rem; */
-        text-align: center;
-    }
-
-    .subscribe form {
-        max-width: 1200px; /* Increase the maximum width of the form */
-        margin: 3rem auto; /* Center the form with some top margin */
-    }
-    
-    .subscribe form input,
-    .subscribe form button {
-        /* padding: 0 7rem; */
-        width: 100%; /* Take up full width */
-        font-size: 2rem; /* Increase font size for better readability */
-        /* padding: 2rem 5rem; */
-        height: 6rem; /* Increase height for better visibility */
-    }
-    
-    
-    .subscribe form input::placeholder{
-        width: 200%;
-    }
-    .social-icons {
-        margin-top: 3rem;
-        text-align: center;
-    }
-
-    .social-icons a {
-        text-align: center;
-        padding-top: 1rem;
-        margin: 0 2rem; /* Increase spacing between social icons */
-        font-size: 3rem; /* Increase font size for better visibility */
-        height: 6.5rem; /* Increase height for better visibility */
-        width: 6.5rem; /* Increase width for better visibility */
-        align-items: center;
-    }
-
-    footer h2 {
-        font-size: 4.5rem;
-        font-weight: bold;
-        text-shadow: 0 .2rem .2rem var(--rose-gold);
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* footer h2:hover {
-        font-size: 5rem;
-    } */
-
-    .links h5 {
-        font-size: 4.5rem;
-        margin-bottom: 2rem;
-    }
-    .links h5{
-        position: relative;
-    }
-    
-    .links h5:before{
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -.2rem;
-        width: 0;
-        height: .2rem;
-        background: var(--light-cream);
-        -webkit-transition: all .3s ease-in-out;
-        -o-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out;
-    }
-    .links h5:hover:before{
-        width: 65%;
-        position: absolute;
-         border-radius: .2rem;
-    }
-
-
-    .links ul {
-        /* margin: 2.5rem 0; */
-    }
-
-    .links li,
-    .links li a {
-        margin: .5rem 0;
-        font-size: 1.8rem; /* Increase font size for better readability */
-        text-align: left;
-    }
-
-    .copyright {
-        margin-top: 3rem;
-        text-align: center;
-        font-size: 2rem; /* Increase font size for better readability */
-    }
-}
-
