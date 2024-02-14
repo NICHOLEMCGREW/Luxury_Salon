@@ -450,13 +450,13 @@ header .logo:hover{
 
 .pricing h2{
     /* margin-top: -1.5rem; */
-    font-size: 3.5rem;
+    /* font-size: 3.5rem; */
     font-weight: 800;
     letter-spacing: .2rem;
     font-family: 'Dancing Script', sans-serif;
     text-shadow: var(--text-shadow);
     color: var(--rose-gold);
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 
 .pricing-container {
@@ -473,25 +473,20 @@ header .logo:hover{
     border: var(--border);
     box-shadow: var(--box-shadow);
     transition: transform 0.3s;
-    height: 165px;
+    height: auto;
 }
 
 .pricing-item h3 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     letter-spacing: .2rem;
     color: #444;
-    margin-bottom: 1.5rem;
-}
-
-.pricing-item ul {
-    list-style-type: none;
-    padding: 0;
+    margin-bottom: 1rem;
 }
 
 .pricing-item li {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #444;
-    margin-bottom: 1rem;
+    margin-bottom: .6rem;
 }
 
 .pricing-item:hover {
@@ -667,18 +662,13 @@ footer h2:hover{
         margin-bottom: -3rem;
     }
     .services h2 {
-        font-size: 4.5rem; /* Adjust heading font size for smaller screens */
+        /* font-size: 4.5rem; Adjust heading font size for smaller screens */
     }
     .service-title {
         margin-bottom: 2.5rem;
     }
-    .pricing h2 {
-        font-size: 4rem; /* Adjust heading font size for smaller screens */
-    }
     
-    .pricing-item {
-        max-width: calc(100% - 2rem); /* Allow items to take full width on even smaller screens */
-    }
+    
 }
 
 /* On larger screens, display 3 columns */
@@ -687,16 +677,10 @@ footer h2:hover{
         -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: repeat(3, 1fr);
     }
-    .pricing-item {
-        height: auto;
-    }
 }
 
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
-    /* html {
-        font-size: 65%;
-    } */
     .header #menu-btn{
         display: inline-block;
     }
@@ -707,7 +691,6 @@ footer h2:hover{
         background: var(--rose-gold);
         border-top: 0.2rem solid var(--light-cream);
         border-bottom: 0.2rem solid var(--light-cream);
-        /* padding: 0.2rem; */
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
                 clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
                 
@@ -726,7 +709,6 @@ footer h2:hover{
     }
 
     .home {
-        /* background: url(../imgs/bg/rosebg.jpeg); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 85%;
@@ -740,14 +722,6 @@ footer h2:hover{
         grid-column-gap: 0; /* Remove column gap */
     }
 
-    .about-container {
-        /* text-align: left; Align text to the left on smaller screens */
-    }
-/* 
-    .about h2 {
-        font-size: 3rem;
-        text-align: center;
-    } */
     .about-container p {
         /* width: 100%; */
         /* font-size: 1.3rem; */
@@ -756,9 +730,6 @@ footer h2:hover{
         /* margin: 0; */
     }
 
-    /* .services h2 {
-        font-size: 3rem;
-    } */
     .services-container {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -814,16 +785,9 @@ footer h2:hover{
         width: auto; /* Take up full width on smaller screens */
         /* padding-top: 2rem;
         padding-bottom: 2rem; */
-        height: 170px;
+        
     }
     
-    .pricing-item h3 {
-        font-size: 2rem;
-    }
-
-    .pricing-item li {
-        font-size: 1.2rem;
-    }
     .subscribe {
         margin-bottom: 0;
     }
@@ -1047,7 +1011,7 @@ hr{
     .pricing h2 {
         margin-top: 1rem;
         margin-bottom: 1.5rem;
-        font-size: 5rem;
+        /* font-size: 5rem; */
     }
     
     .pricing-container {
@@ -1066,11 +1030,11 @@ hr{
     }
 
     .pricing-item h3 {
-        font-size: 3rem;
+        /* font-size: 3rem; */
     }
 
     .pricing-item li {
-        font-size: 2.5rem;
+        /* font-size: 2.5rem; */
     }
 
     footer {
