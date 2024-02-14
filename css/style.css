@@ -102,6 +102,21 @@ section {
     padding: 5rem 7%;
 }
 
+.heading{
+    text-align: center;
+    color: var(--rose-gold);
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+    /* margin-top: 3rem; */
+    font-size: 4rem;
+    /* line-height: 1.1em; */
+    font-weight: 800;
+    /* background-clip: border-box; */
+    letter-spacing: .2rem;
+    font-family: 'Dancing Script', sans-serif;
+    text-shadow: var(--text-shadow);
+}
+
 /* header/nav  */
 header{
     padding: 1.5rem 5%;
@@ -331,7 +346,7 @@ header .logo:hover{
     padding: .5rem;
 }
 
-.about-container h2 {
+/* .about-container h2 {
     font-size: 4rem;
     line-height: 1.1em;
     font-weight: 800;
@@ -341,7 +356,7 @@ header .logo:hover{
     text-shadow: var(--text-shadow);
     color: var(--rose-gold);
     /* margin-bottom: 1rem; */
-}
+} */
 
 .about-container p {
     font-size: 1rem; 
@@ -547,7 +562,7 @@ footer h2:hover{
 }
 
 .subscribe form button {
-    height: 4rem;
+    height: rem;
     width: 100%; /* Take up full width on smaller screens */
     max-width: 18rem; /* Limit the maximum width */
     color: var(--light-cream);
@@ -558,9 +573,9 @@ footer h2:hover{
     margin-top: 1rem; /* Add space between input and button */
 }
 
-.subscribe form button:hover {
+/* .subscribe form button:hover {
     font-size: 1.7rem;
-}
+} */
 
 /* Social Icons - Adjust for smaller screens */
 .social-icons {
